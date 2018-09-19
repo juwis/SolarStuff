@@ -180,7 +180,7 @@ ISR(ACA_AC0_vect)
 	static uint16_t comperator_sleep_time = 0;
 
 	uint16_t last_rt_time = (RT_TIME[0] + RT_TIME[1] + RT_TIME[2] + RT_TIME[3] + RT_TIME[4] + RT_TIME[5]) / 6;
-		
+	
 	RT_TIME[COMMUTATION_INDEX_SENSED] = TCD0.CNT;
 
 	// tcd0 measures the commutation time, reset to zero
@@ -207,7 +207,7 @@ ISR(ACA_AC0_vect)
 		//RT_TIME[COMMUTATION_INDEX_SENSED] = 65535; //max value
 		MOTOR_TO_SLOW = 0; //reset here, perhaps we are now fast enough...
 		
-	}else{
+		}else{
 		
 		average_time = last_rt_time;
 		
@@ -349,7 +349,7 @@ void beep(uint16_t beep_pwm, uint16_t length, uint8_t tone){
 }
 
 uint16_t get_transmitter_power(){
-	static uint16_t power = 1000;
+	static int16_t power = 1000;
 	volatile uint16_t servopulse = 0;
 	uint16_t normalized_power = 0;
 	servopulse = TCE0_CCABUF;
@@ -360,22 +360,25 @@ uint16_t get_transmitter_power(){
 		//infinite response filtering + normalizing (0-1000) applied in the next line
 		float norm_divisor = ((float)((float)TRANSMITTER_MAX_PULSE - (float)TRANSMITTER_MIN_PULSE)/1000.0);
 		
-		power += (((servopulse - TRANSMITTER_MIN_PULSE) / norm_divisor) - power) / TRANSMITTER_FILTER_STRENGTH; //the division normalizes the value to 0-1000, the 
-	}else{
+		power += (((servopulse - TRANSMITTER_MIN_PULSE) / norm_divisor) - power) / TRANSMITTER_FILTER_STRENGTH; //the division normalizes the value to 0-1000, the
+		}else{
 		//wrong signal received, reset to zero (which is 1000 here)
 		power = 1000;
 	}
-	
-	normalized_power = 1000 - power; //invert because it is getting lower the more the trigger is pushed...
-	
+	if(power > 1000){
+		normalized_power = 0;
+		}else{
+		normalized_power = 1000 - power; //invert because it is getting lower the more the trigger is pushed...
+	}
 	//now add full and no throttle positions, mix them in
+	
 	if (normalized_power < NORMALIZED_MIN_THROTTLE){
 		return 0;
 	}
-
-	if (normalized_power > NORMALIZED_MIN_THROTTLE && normalized_power < NORMALIZED_MAX_THROTTLE){
-		return (normalized_power - NORMALIZED_MIN_THROTTLE) + (((NORMALIZED_MIN_THROTTLE * normalized_power) / NORMALIZED_MAX_THROTTLE) * 2);
-	}
+//
+	//if (normalized_power > NORMALIZED_MIN_THROTTLE && normalized_power < NORMALIZED_MAX_THROTTLE){
+		//return (normalized_power - NORMALIZED_MIN_THROTTLE) + (((NORMALIZED_MIN_THROTTLE * normalized_power) / NORMALIZED_MAX_THROTTLE));
+	//}
 
 	if (normalized_power > NORMALIZED_MAX_THROTTLE){
 		return 1000;
@@ -393,6 +396,8 @@ int main(void)
 	unsigned char tmp;
 	uint32_t transmitter_power = 0;
 	uint16_t out_power = 0;
+	uint16_t mppt_live_voltage = MPPT_VOLTAGE;
+	
 	//****************************************************************************************************
 	// globals init
 	BREAK = 1;
@@ -805,14 +810,14 @@ int main(void)
 	BREAK = 1; //break applied
 	beep(0x04f, 250, 3);
 	_delay_ms(100);
-	beep(0x04f, 400, 2);	
+	beep(0x04f, 400, 2);
 	// wait for no power from transmitter, a hundred times with no exception
 	uint8_t no_power_count = 100;
 	while(1){
 		if(get_transmitter_power() == 0){
 			no_power_count--;
 			_delay_ms(5);
-		}else{
+			}else{
 			no_power_count = 100;
 		}
 		
@@ -829,12 +834,11 @@ int main(void)
 	
 	while (1)
 	{
-		ADC=adc_read();
-		transmitter_power = get_transmitter_power();
-	
+		static double avarage_time_filtered_a = 0;
+		static double avarage_time_filtered_b = 0;
+		static int8_t inc_dec = 1;
+		transmitter_power = get_transmitter_power();//needed here
 		
-		_delay_us(100);
-	
 		if(BREAK == 1){
 			if(transmitter_power > 0){
 				startup(0x01f, 3, 150, 50, 5);
@@ -844,33 +848,66 @@ int main(void)
 		if(transmitter_power == 0){
 			TCC0.CCA = 0x00; //shut down power
 			BREAK = 1;
+			_delay_us(100);
 			continue;
 		}
-		
-		//this makes sense, because we are getting here after startup from the previous if...
-		//an else clause would mean that the power setting would be delayed for cycle time + a bit...
-		if(BREAK == 0){
-			//we are probably running
-			uint16_t out_power_transmitter = (transmitter_power * PWM_TOP_PER) / 1000;
+
+		for(uint8_t voltage_runs = 0; voltage_runs<50; voltage_runs++){
+			ADC=adc_read();
+			transmitter_power = get_transmitter_power();//and here too
 			
-			out_power_transmitter = out_power_transmitter > PWM_TOP_PER ? PWM_TOP_PER : out_power_transmitter; //limit to PWM_TOP Value
 			
-			if(out_power < out_power_transmitter && ADC > MPPT_VOLTAGE){
-				out_power++;
+			//this makes sense, because we are getting here after startup from the previous if...
+			//an else clause would mean that the power setting would be delayed for cycle time + a bit...
+			if(BREAK == 0){
+				//we are probably running
+				uint16_t out_power_transmitter = (transmitter_power * PWM_TOP_PER) / 1000;
+				
+				out_power_transmitter = out_power_transmitter > PWM_TOP_PER ? PWM_TOP_PER : out_power_transmitter; //limit to PWM_TOP Value
+				
+				if(out_power < out_power_transmitter && ADC > mppt_live_voltage){
+					out_power++;
+				}
+				
+				if(out_power > out_power_transmitter){
+					out_power = out_power_transmitter;
+				}
+				
+				if(out_power > 0 && ADC < mppt_live_voltage){
+					out_power--;
+				}
+				
+				//printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);
+				TCC0.CCA = out_power;
 			}
 			
-			if(out_power > out_power_transmitter){
-				out_power = out_power_transmitter;
-			}
+			_delay_us(25);
 			
-			if(out_power > 0 && ADC < MPPT_VOLTAGE){
-				out_power--;
-			}
-			
-			printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);	
-			TCC0.CCA = out_power;
 		}
 		
+		if(avarage_time_filtered_a < 1){
+			avarage_time_filtered_a = average_time;
+			avarage_time_filtered_b = average_time;
+		}
+		avarage_time_filtered_a += (average_time - avarage_time_filtered_a) / 32;
+		avarage_time_filtered_b += (average_time - avarage_time_filtered_b) / 16;
+		int16_t rpm_lead = 10 * (avarage_time_filtered_a - avarage_time_filtered_b);
+		
+		if((mppt_live_voltage * 0.98) < ADC && ADC < (mppt_live_voltage * 1.02)){
+
+			if(rpm_lead < 0){
+				inc_dec = inc_dec * -1;
+			}
+			if(mppt_live_voltage < MPPT_VOLTAGE_ADJUST_TOP && inc_dec > 0){ //increase only to this limit
+				mppt_live_voltage = mppt_live_voltage + inc_dec;
+			}
+			if(mppt_live_voltage > MPPT_VOLTAGE_ADJUST_BOT && inc_dec < 0){ //decrease only to this limit
+				mppt_live_voltage = mppt_live_voltage + inc_dec;
+			}
+			
+			//printf("mplv: %05u mV (%u)\r\n", mppt_live_voltage, inc_dec);
+			
+		}
 		
 	}
 }
