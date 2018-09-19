@@ -16,7 +16,7 @@
 
 volatile unsigned char COMMUTATION_INDEX_SENSED, COMMUTATION_INDEX;
 volatile uint32_t RT_TIME[6];
-volatile unsigned int ADC;
+volatile uint16_t ADC;
 volatile unsigned int BREAK;
 volatile uint16_t average_time;
 
@@ -75,7 +75,7 @@ void set_ac_interrupt(){
 }
 
 
-unsigned int adc_read(void)
+uint16_t adc_read(void)
 {
 	ADC_CH_t *adc_channel=&ADCA.CH0;
 	unsigned int value;
@@ -87,7 +87,8 @@ unsigned int adc_read(void)
 	
 	((unsigned char *) &value)[0]=adc_channel->RESL;
 	((unsigned char *) &value)[1]=adc_channel->RESH;
-	return value;
+	uint16_t res = ((((float)value * 23.0) / 4096.0) - 0.9) * 1000;
+	return res;
 }
 
 
@@ -327,6 +328,62 @@ void startup(uint16_t startup_pwm, uint8_t hard_commutations,uint8_t wait_first,
 	asm("sei");
 }
 
+void beep(uint16_t beep_pwm, uint16_t length, uint8_t tone){
+	asm("cli");
+	TCC0.CCA = beep_pwm;
+
+	for(uint16_t i=0; i<length; i++){
+		SET_PHASE_PWM(0, 0);
+		for(uint8_t delay=0; delay < tone; delay++){
+			_delay_us(100);
+		}
+		SET_PHASE_PWM(1, 0);
+		for(uint8_t delay=0; delay < tone; delay++){
+			_delay_us(100);
+		}
+	}
+
+	SET_PHASE_PWM(COMMUTATION_INDEX, BREAK);
+	asm("sei");
+
+}
+
+uint16_t get_transmitter_power(){
+	static uint16_t power = 1000;
+	volatile uint16_t servopulse = 0;
+	uint16_t normalized_power = 0;
+	servopulse = TCE0_CCABUF;
+
+
+	if(servopulse > TRANSMITTER_MIN_PULSE && servopulse < TRANSMITTER_MAX_PULSE){
+		//seems to be in a reasonable window
+		//infinite response filtering + normalizing (0-1000) applied in the next line
+		float norm_divisor = ((float)((float)TRANSMITTER_MAX_PULSE - (float)TRANSMITTER_MIN_PULSE)/1000.0);
+		
+		power += (((servopulse - TRANSMITTER_MIN_PULSE) / norm_divisor) - power) / TRANSMITTER_FILTER_STRENGTH; //the division normalizes the value to 0-1000, the 
+	}else{
+		//wrong signal received, reset to zero (which is 1000 here)
+		power = 1000;
+	}
+	
+	normalized_power = 1000 - power; //invert because it is getting lower the more the trigger is pushed...
+	
+	//now add full and no throttle positions, mix them in
+	if (normalized_power < NORMALIZED_MIN_THROTTLE){
+		return 0;
+	}
+
+	if (normalized_power > NORMALIZED_MIN_THROTTLE && normalized_power < NORMALIZED_MAX_THROTTLE){
+		return (normalized_power - NORMALIZED_MIN_THROTTLE) + (((NORMALIZED_MIN_THROTTLE * normalized_power) / NORMALIZED_MAX_THROTTLE) * 2);
+	}
+
+	if (normalized_power > NORMALIZED_MAX_THROTTLE){
+		return 1000;
+	}
+
+	return normalized_power;
+}
+
 
 int main(void)
 {
@@ -334,8 +391,8 @@ int main(void)
 	//****************************************************************************************************
 	// local variables
 	unsigned char tmp;
-	uint16_t rc_sig_raw = 0;
-	
+	uint32_t transmitter_power = 0;
+	uint16_t out_power = 0;
 	//****************************************************************************************************
 	// globals init
 	BREAK = 1;
@@ -659,6 +716,10 @@ int main(void)
 	// channel 0 : single ended positive input signal
 	ADCA.CH0.CTRL=(0<<ADC_CH_START_bp) | ADC_CH_GAIN_1X_gc | ADC_CH_INPUTMODE_SINGLEENDED_gc;
 
+	// channel 0 p in ADC7
+	// channel 0 n in GND
+	ADCA.CH0.MUXCTRL=ADC_CH_MUXPOS_PIN7_gc;
+
 	// free run mode
 	ADCA.CTRLB|=ADC_FREERUN_bm;
 	// enable!
@@ -742,40 +803,75 @@ int main(void)
 
 	TCC0.CCA = 0x00; //no power applied
 	BREAK = 1; //break applied
+	beep(0x04f, 250, 3);
+	_delay_ms(100);
+	beep(0x04f, 400, 2);	
+	// wait for no power from transmitter, a hundred times with no exception
+	uint8_t no_power_count = 100;
+	while(1){
+		if(get_transmitter_power() == 0){
+			no_power_count--;
+			_delay_ms(5);
+		}else{
+			no_power_count = 100;
+		}
+		
+		//break if we got no power from tx
+		if(no_power_count < 1){
+			beep(0x04f, 250, 3);
+			_delay_ms(100);
+			beep(0x04f, 1200, 2);
+			break;
+		}
+	}
 	
-	uint16_t servopulse = TCE0.CCA;
-	uint16_t power_filtered = 0;
+	
 	
 	while (1)
 	{
 		ADC=adc_read();
-		uart_putchar('c', NULL);
-		asm("cli");
-		servopulse = TCE0.CCA;
-		asm("sei");
+		transmitter_power = get_transmitter_power();
+	
 		
-		_delay_us(250);
-		
-		if(servopulse > 17000 && servopulse < 30000){
-			//seems to be in a reasonable window
-			//infinite response filtering + normalizing (0-1000) applied in the next line
-			power_filtered += (((servopulse - 17000) / 13) - power_filtered) / 8; //the division by 13 makes it from 0-1000
-			printf("rcIN: %08u power_filtered: %04u\r\n", servopulse, power_filtered);
-			if (power_filtered > 20){
-				if (BREAK == 1){
-					startup(0x05F,4, 140, 60, 10);
-					asm("cli");
-					TCC0.CCA = ((PWM_TOP_PER * power_filtered) / 1000);
-				}
-				
+		_delay_us(100);
+	
+		if(BREAK == 1){
+			if(transmitter_power > 0){
+				startup(0x01f, 3, 150, 50, 5);
 			}
-		}else{
-			power_filtered = 0;
-			BREAK = 1;
 		}
-
 		
-
+		if(transmitter_power == 0){
+			TCC0.CCA = 0x00; //shut down power
+			BREAK = 1;
+			continue;
+		}
+		
+		//this makes sense, because we are getting here after startup from the previous if...
+		//an else clause would mean that the power setting would be delayed for cycle time + a bit...
+		if(BREAK == 0){
+			//we are probably running
+			uint16_t out_power_transmitter = (transmitter_power * PWM_TOP_PER) / 1000;
+			
+			out_power_transmitter = out_power_transmitter > PWM_TOP_PER ? PWM_TOP_PER : out_power_transmitter; //limit to PWM_TOP Value
+			
+			if(out_power < out_power_transmitter && ADC > MPPT_VOLTAGE){
+				out_power++;
+			}
+			
+			if(out_power > out_power_transmitter){
+				out_power = out_power_transmitter;
+			}
+			
+			if(out_power > 0 && ADC < MPPT_VOLTAGE){
+				out_power--;
+			}
+			
+			printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);	
+			TCC0.CCA = out_power;
+		}
+		
+		
 	}
 }
 
