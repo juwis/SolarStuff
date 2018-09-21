@@ -9,8 +9,8 @@
 </settings>
 <grid distance="2" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
-<layer number="2" name="Route3" color="13" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route3" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
 <layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
@@ -32,7 +32,7 @@
 <layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
@@ -3131,9 +3131,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </autorouter>
 <elements>
 <element name="C1" library="rcl" package="C0603" value="4n7/50V" x="3.8608" y="10.1854" smashed="yes" rot="R180"/>
-<element name="C5" library="rcl" package="C0603" value="100n/25V" x="8.0264" y="2.4384" smashed="yes" rot="R270"/>
-<element name="C6" library="rcl" package="C0603" value="100n/25V" x="12.0904" y="2.4384" smashed="yes" rot="R270"/>
-<element name="C7" library="rcl" package="C0603" value="100n/25V" x="14.1224" y="2.4384" smashed="yes" rot="R270"/>
+<element name="C5" library="rcl" package="C0603" value="100n/50V" x="8.0264" y="2.4384" smashed="yes" rot="R270"/>
+<element name="C6" library="rcl" package="C0603" value="100n/50V" x="12.0904" y="2.4384" smashed="yes" rot="R270"/>
+<element name="C7" library="rcl" package="C0603" value="100n/50V" x="14.1224" y="2.4384" smashed="yes" rot="R270"/>
 <element name="IC1" library="atmel" package="MLF44-TH" value="XMEGA16A4U" x="9.8552" y="13.0048" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="9.8552" y="13.0048" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="9.8552" y="13.0048" size="1.778" layer="27" rot="R180" display="off"/>
@@ -4680,7 +4680,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="3.4002" y1="12.752825" x2="3.4002" y2="11.8906" width="0.1524" layer="16"/>
 <wire x1="3.4002" y1="11.8906" x2="3.8608" y2="11.43" width="0.1524" layer="16"/>
 </signal>
-<signal name="+12V">
+<signal name="+5V_FET_DRIVER">
 <contactref element="U$6" pad="4"/>
 <contactref element="D3" pad="A"/>
 <contactref element="C13" pad="2"/>
