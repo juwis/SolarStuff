@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10832,9 +10832,16 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <description>Symbols, Logos, Fiducials...</description>
 <packages>
 <package name="PASSER_07MM">
+<description>0.7mm</description>
 <circle x="0" y="0" radius="0.6" width="0.127" layer="41"/>
 <smd name="X" x="0" y="0" dx="0.7" dy="0.7" layer="1" roundness="100" stop="no" cream="no"/>
 <circle x="0" y="0" radius="0.3" width="0.6" layer="29"/>
+</package>
+<package name="PASSER_04MM">
+<description>0.4mm</description>
+<circle x="0" y="0" radius="0.4" width="0.127" layer="41"/>
+<smd name="X" x="0" y="0" dx="0.4" dy="0.4" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0" y="0" radius="0.1" width="0.6" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -10846,12 +10853,17 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 </symbols>
 <devicesets>
 <deviceset name="PASSER" prefix="X">
-<description>Fiducial Markers</description>
+<description>Fiducial Marker</description>
 <gates>
 <gate name="X" symbol="PASSER" x="0" y="0"/>
 </gates>
 <devices>
 <device name="-07" package="PASSER_07MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-04" package="PASSER_04MM">
 <technologies>
 <technology name=""/>
 </technologies>
