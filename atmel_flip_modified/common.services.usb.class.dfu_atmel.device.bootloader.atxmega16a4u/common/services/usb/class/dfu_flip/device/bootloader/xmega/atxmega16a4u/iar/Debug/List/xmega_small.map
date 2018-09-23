@@ -1,0 +1,2184 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.5.0.91                                          #
+#                                                                              #
+#           Link time     =  22/Sep/2018  10:03:37                             #
+#           Target CPU    =  A90                                               #
+#           List file     =  C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\List\xmega_small.map        #
+#           Output file 1 =  C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Exe\xmega_small.hex         #
+#                            Format: intel-extended                            #
+#           Output file 2 =  C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Exe\xmega_small.dbg         #
+#                            Format: ubrof8                                    #
+#                            UBROF version 8.0.2                               #
+#           Command line  =  -f C:\Users\ju\AppData\Local\Temp\EW8A56.tmp      #
+#                            (C:\Users\ju\Desktop\common.services.usb.class.df #
+#                            u_atmel.device.bootloader.atxmega16a4u\common\ser #
+#                            vices\usb\class\dfu_flip\device\bootloader\xmega\ #
+#                            atxmega16a4u\iar\Debug\Obj\ccp.r90                #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\cstartup.r90            #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\isp.r90                 #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\main.r90                #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\nvm.r90                 #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\nvm_asm.r90             #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\sysclk.r90              #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\sysclk_opt.r90          #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\udc_dfu_small.r90       #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\udi_dfu_atmel.r90       #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\udi_dfu_atmel_desc.r90  #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Obj\usb_device.r90          #
+#                            -o                                                #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\Exe\xmega_small.dbg         #
+#                            -Fubrof8 -l                                       #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\Debug\List\xmega_small.map        #
+#                            -xmsn                                             #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 8.0\avr\LIB\"                             #
+#                            -f                                                #
+#                            C:\Users\ju\Desktop\common.services.usb.class.dfu #
+#                            _atmel.device.bootloader.atxmega16a4u\common\serv #
+#                            ices\usb\class\dfu_flip\device\bootloader\xmega\a #
+#                            txmega16a4u\iar\atxmega16a4u_boot.xcl             #
+#                            (-ca90 -w29 -D_..X_FLASH_BASE=4002                #
+#                            -D_..X_CODE_END=4FFF -D_..X_INTVEC_END=41FB       #
+#                            -Z(CODE)INTVEC=41F4-41FF                          #
+#                            -P(CODE)BOOT=_..X_FLASH_BASE-_..X_CODE_END        #
+#                            -P(CODE)CODE=_..X_FLASH_BASE-_..X_CODE_END        #
+#                            -P(CODE)FARCODE=_..X_FLASH_BASE-_..X_CODE_END     #
+#                            -Z(CODE)INITTAB=41FC-_..X_CODE_END                #
+#                            -Z(CODE)NEAR_ID=41FC-_..X_CODE_END                #
+#                            -D_..X_SRAM_BASE=2000 -D_..X_SRAM_TINY_END=FF     #
+#                            -D_..X_SRAM_NEAR_END=FFFF                         #
+#                            -D_..X_SRAM_FAR_END=FFFFFF                        #
+#                            -D_..X_SRAM_HUGE_END=FFFFFF                       #
+#                            -D_..X_CSTACK_SIZE=70 -D_..X_RSTACK_SIZE=70       #
+#                            -D_..X_NEAR_HEAP_SIZE=1000                        #
+#                            -D_..X_HEAP_SIZE=1000 -D_..X_FAR_HEAP_SIZE=1000   #
+#                            -D_..X_HUGE_HEAP_SIZE=1000                        #
+#                            -Z(DATA)SRAM_NO_INIT=2000-2001                    #
+#                            -Z(DATA)TINY_I,TINY_Z,TINY_N=_..X_SRAM_BASE-_..X_ #
+#                            SRAM_NEAR_END                                     #
+#                            -Z(DATA)RSTACK+_..X_RSTACK_SIZE=_..X_SRAM_BASE-_. #
+#                            .X_SRAM_NEAR_END                                  #
+#                            -Z(DATA)NEAR_I,NEAR_Z,NEAR_N,NEAR_C=_..X_SRAM_BAS #
+#                            E-_..X_SRAM_NEAR_END                              #
+#                            -Z(DATA)NEAR_HEAP+_..X_NEAR_HEAP_SIZE=_..X_SRAM_B #
+#                            ASE-_..X_SRAM_NEAR_END                            #
+#                            -Z(DATA)CSTACK+_..X_CSTACK_SIZE=[_..X_SRAM_BASE-_ #
+#                            ..X_SRAM_FAR_END]/10000                           #
+#                            -Z(DATA)HEAP+_..X_HEAP_SIZE=[_..X_SRAM_BASE-_..X_ #
+#                            SRAM_FAR_END]/10000                               #
+#                            -Z(DATA)IOSTREAM_N#[_..X_SRAM_BASE-_..X_SRAM_FAR_ #
+#                            END]/10000                                        #
+#                            -Z(DATA)FAR_Z,FAR_N,FAR_C=[_..X_SRAM_BASE-_..X_SR #
+#                            AM_FAR_END]/10000                                 #
+#                            -Z(DATA)FAR_HEAP+_..X_FAR_HEAP_SIZE=_..X_SRAM_BAS #
+#                            E-_..X_SRAM_FAR_END                               #
+#                            -Z(DATA)HUGE_I,HUGE_Z,HUGE_N,HUGE_C=_..X_SRAM_BAS #
+#                            E-_..X_SRAM_HUGE_END                              #
+#                            -Z(DATA)HUGE_HEAP+_..X_HUGE_HEAP_SIZE=_..X_SRAM_B #
+#                            ASE-_..X_SRAM_HUGE_END)                           #
+#                            -Ointel-extended=C:\Users\ju\Desktop\common.servi #
+#                            ces.usb.class.dfu_atmel.device.bootloader.atxmega #
+#                            16a4u\common\services\usb\class\dfu_flip\device\b #
+#                            ootloader\xmega\atxmega16a4u\iar\Debug\Exe\xmega_ #
+#                            small.hex                                         #
+#                            -s __program_start                                #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 8.0\avr\LIB\DLIB\dlAVR-3s-xmega-sf-n.r90")  #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      00004000  Absolute, from module : ?RESET
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  R10                        = REG
+  R4                         = REG
+  R5                         = REG
+  R6                         = REG
+  R7                         = REG
+  R8                         = REG
+  R9                         = REG
+  __64bit_doubles            = disabled
+  __SystemLibrary            = DLib
+  __cpu                      = 3
+  __cpu_name                 = ATxmega16A4U
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __enhanced_core            = enabled
+  __has_elpm                 = false
+  __memory_model             = 2
+  __rt_version               = 3
+  __tiny_avr                 = false
+  __vtable_memory            = __nearflash
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+                  There are no automatic symbol redirections.
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _..X_HUGE_HEAP_SIZE     00001000 
+           _..X_FAR_HEAP_SIZE      00001000 
+           _..X_HEAP_SIZE          00001000 
+           _..X_NEAR_HEAP_SIZE     00001000 
+           _..X_RSTACK_SIZE        00000070 
+           _..X_CSTACK_SIZE        00000070 
+           _..X_SRAM_HUGE_END      00FFFFFF 
+           _..X_SRAM_FAR_END       00FFFFFF 
+           _..X_SRAM_NEAR_END      0000FFFF 
+           _..X_SRAM_TINY_END      000000FF 
+           _..X_SRAM_BASE          00002000 
+           _..X_INTVEC_END         000041FB 
+           _..X_CODE_END           00004FFF 
+           _..X_FLASH_BASE         00004002 
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\ccp.r90
+  LIBRARY MODULE, NAME : ccp_write_io
+
+Absolute parts
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __ATxmega16C4__         00000000 
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004182 - 0000418F (0xe bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ccp_write_io            00004182        Segment part 72 (isp)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           CONFIG_MEMORY_MODEL_LARGE
+                                   00004182 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\cstartup.r90
+  LIBRARY MODULE, NAME : ?RESET
+
+Absolute parts
+     00004000 - 00004001
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         00004000        Absolute parts (?ABS_ENTRY_MOD)
+           ?RESET                  00004000 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __ATxmega16C4__         00000000 
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?C_STARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was BOOT)
+  Relative segment, address: CODE 00004002 - 00004037 (0x36 bytes), align: 1
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?C_STARTUP              00004002        Absolute parts (?RESET)
+           __RESTART               00004002 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           boot_process            00004002 
+           tempo                   00004016 
+           start_app_jmp           00004036 
+    -------------------------------------------------------------------------
+STARTBOOT
+  Relative segment, address: CODE 000041FC - 000041FD (0x2 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   Segment part 2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           start_boot              000041FC 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000040C6 - 000040FF (0x3a bytes), align: 1
+  Segment part 4.             Intra module refs:   Segment part 2
+                                                   start_boot
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?need_segment_init      000040D2        ?<Segment init: NEAR_I> (isp)
+                                                   ?<Segment init: NEAR_Z> (isp)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           start_app               000040DA 
+           ?SETUP_STACK            000040C6 
+           clear_rst_flags         000040F0 
+           jump_0                  000040EC 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\isp.r90
+  PROGRAM MODULE, NAME : isp
+
+  SEGMENTS IN THE MODULE
+  ======================
+SRAM_NO_INIT
+  Relative segment, address: DATA 00002000 - 00002001 (0x2 bytes), align: 0
+  Segment part 8.             Intra module refs:   isp_start_appli
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           start_app_key           00002000        ?need_segment_init (?C_STARTUP)
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 00002072 - 00002074 (0x3 bytes), align: 0
+  Segment part 11.            Intra module refs:   mem_bootloader_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_bootloader          00002072 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 00002075 - 0000207C (0x8 bytes), align: 0
+  Segment part 14.            Intra module refs:   Segment part 25
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_flash               00002075 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 0000207D - 00002084 (0x8 bytes), align: 0
+  Segment part 16.            Intra module refs:   Segment part 25
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_eeprom              0000207D 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 00002085 - 0000208C (0x8 bytes), align: 0
+  Segment part 18.            Intra module refs:   Segment part 25
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_bootloader          00002085 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 0000208D - 00002094 (0x8 bytes), align: 0
+  Segment part 20.            Intra module refs:   Segment part 25
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_signature           0000208D 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 00002095 - 0000209C (0x8 bytes), align: 0
+  Segment part 22.            Intra module refs:   Segment part 25
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_no_available        00002095 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 0000209D - 000020BE (0x22 bytes), align: 0
+  Segment part 24.            Intra module refs:   udi_dfu_atmel_sel_mem
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_memories            0000209D 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041FE - 00004221 (0x24 bytes), align: 1
+  Segment part 33.            Intra module refs:   mem_flash_read
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_flash_read_buffer   000041FE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004222 - 00004229 (0x8 bytes), align: 1
+  Segment part 34.            Intra module refs:   Segment part 15
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_flash_read          00004222 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000422A - 000042DD (0xb4 bytes), align: 1
+  Segment part 35.            Intra module refs:   mem_flash_write
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_flash_erase_and_write_buffer
+                                   0000422A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000042DE - 000042E7 (0xa bytes), align: 1
+  Segment part 36.            Intra module refs:   nvm_flash_erase_and_write_buffer
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine5            000042DE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000042E8 - 000042EB (0x4 bytes), align: 1
+  Segment part 37.            Intra module refs:   Segment part 15
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_flash_write         000042E8 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000042EC - 0000430F (0x24 bytes), align: 1
+  Segment part 38.            Intra module refs:   mem_eeprom_read
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_read_buffer
+                                   000042EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004310 - 00004313 (0x4 bytes), align: 1
+  Segment part 39.            Intra module refs:   ?Subroutine13
+                                                   nvm_eeprom_read_buffer
+                                                   sysclk_init_opt
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine53           00004310 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004314 - 0000431B (0x8 bytes), align: 1
+  Segment part 40.            Intra module refs:   Segment part 17
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_eeprom_read         00004314 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000431C - 00004331 (0x16 bytes), align: 1
+  Segment part 41.            Intra module refs:   nvm_eeprom_fill_buffer_with_value
+                                                   nvm_eeprom_write_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_flush_buffer
+                                   0000431C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004332 - 0000435F (0x2e bytes), align: 1
+  Segment part 42.            Intra module refs:   nvm_eeprom_erase_and_write_buffer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_write_byte   00004332 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004360 - 00004365 (0x6 bytes), align: 1
+  Segment part 43.            Intra module refs:   nvm_eeprom_fill_buffer_with_value
+                                                   nvm_eeprom_write_byte
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine6            00004360 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004366 - 0000436D (0x8 bytes), align: 1
+  Segment part 44.            Intra module refs:   ?Subroutine6
+                                                   nvm_eeprom_atomic_write_page
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000436E - 00004383 (0x16 bytes), align: 1
+  Segment part 45.            Intra module refs:   isp_erase_chip
+                                                   nvm_eeprom_atomic_write_page
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           nvm_issue_command       0000436E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004384 - 00004387 (0x4 bytes), align: 1
+  Segment part 46.            Intra module refs:   ?Subroutine37
+                                                   nvm_issue_command
+                                                   udd_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine54           00004384 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004388 - 000043A1 (0x1a bytes), align: 1
+  Segment part 47.            Intra module refs:   nvm_eeprom_erase_and_write_buffer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_atomic_write_page
+                                   00004388 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000043A2 - 000043DB (0x3a bytes), align: 1
+  Segment part 48.            Intra module refs:   nvm_eeprom_erase_and_write_buffer
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_load_page_to_buffer
+                                   000043A2 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000043DC - 0000442B (0x50 bytes), align: 1
+  Segment part 49.            Intra module refs:   mem_eeprom_write
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_erase_and_write_buffer
+                                   000043DC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000442C - 0000442D (0x2 bytes), align: 1
+  Segment part 50.            Intra module refs:   Segment part 17
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_eeprom_write        0000442C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000442E - 00004431 (0x4 bytes), align: 1
+  Segment part 51.            Intra module refs:   Segment part 19
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_bootloader_read     0000442E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004432 - 00004435 (0x4 bytes), align: 1
+  Segment part 52.            Intra module refs:   mem_bootloader_read
+                                                   mem_signature_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine59           00004432 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004436 - 00004439 (0x4 bytes), align: 1
+  Segment part 53.            Intra module refs:   ?Subroutine59
+                                                   nvm_eeprom_read_buffer
+                                                   udd_ctrl_out_received
+                                                   udd_ctrl_setup_received
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000443A - 0000443F (0x6 bytes), align: 1
+  Segment part 54.            Intra module refs:   Segment part 21
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_signature_read      0000443A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004440 - 0000446D (0x2e bytes), align: 1
+  Segment part 55.            Intra module refs:   isp_erase_chip
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_eeprom_fill_buffer_with_value
+                                   00004440 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000446E - 00004473 (0x6 bytes), align: 1
+  Segment part 56.            Intra module refs:   nvm_eeprom_fill_buffer_with_value
+                                                   udd_ctrl_setup_received
+                                                   udi_dfu_atmel_mem_write
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine51           0000446E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004474 - 00004479 (0x6 bytes), align: 1
+  Segment part 57.            Intra module refs:   isp_erase_chip
+                                                   nvm_eeprom_fill_buffer_with_value
+                                                   nvm_flash_erase_and_write_buffer
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine4            00004474 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000447A - 00004497 (0x1e bytes), align: 1
+  Segment part 58.            Intra module refs:   udi_dfu_flip_msg_decode
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_erase_chip          0000447A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004498 - 0000449F (0x8 bytes), align: 1
+  Segment part 59.            Intra module refs:   isp_erase_chip
+                                                   nvm_flash_erase_and_write_buffer
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine2            00004498 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000044A0 - 000044BB (0x1c bytes), align: 1
+  Segment part 60.            Intra module refs:   udi_dfu_atmel_setup
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           isp_start_appli         000044A0 
+               calls direct
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 000020E8 - 000020EF (0x8 bytes), align: 0
+  Segment part 9.             Intra module refs:   ?Subroutine32
+                                                   ?Subroutine50
+                                                   mem_signature_read
+                                                   udi_dfu_atmel_enable
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+                                                   udi_dfu_atmel_setup
+                                                   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           mem_signature           000020E8 
+           udi_dfu_atmel_reset     000020EE 
+           udi_dfu_atmel_security
+                                   000020EF 
+           udi_dfu_atmel_upload_callback
+                                   000020EC 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 000020F0 - 000020F2 (0x3 bytes), align: 0
+  Segment part 26.            Intra module refs:   udc_reqstd
+                                                   udc_reset
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udc_device_status       000020F0 
+           udc_num_configuration   000020F2 
+    -------------------------------------------------------------------------
+NEAR_I
+  Relative segment, address: DATA 000020C0 - 000020E7 (0x28 bytes), align: 1
+  Segment part 27.            Intra module refs:   udc_req_std_dev_get_descriptor
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udc_desc_fs             000020C0 
+           udc_device_desc         000020D2 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udc_string_desc_languageid
+                                   000020E4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000044BC, align: 1
+  Segment part 61.            Intra module refs:   udd_attach
+                                                   udd_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           cpu_irq_restore         000044BC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000044BC - 000044BF (0x4 bytes), align: 1
+  Segment part 62.            Intra module refs:   cpu_irq_restore
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine55           000044BC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000044C0 - 000044FB (0x3c bytes), align: 1
+  Segment part 63.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udd_attach              000044C0 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000044FC - 0000450D (0x12 bytes), align: 1
+  Segment part 64.            Intra module refs:   udd_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           usb_pad_init            000044FC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000450E - 00004517 (0xa bytes), align: 1
+  Segment part 65.            Intra module refs:   usb_pad_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine1            0000450E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004518 - 00004519 (0x2 bytes), align: 1
+  Segment part 66.            Intra module refs:   sysclk_enable_module
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           cpu_irq_restore         00004518 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000451A - 00004531 (0x18 bytes), align: 1
+  Segment part 67.            Intra module refs:   udd_enable
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sysclk_enable_module    0000451A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004532 - 000045A3 (0x72 bytes), align: 1
+  Segment part 68.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udd_enable              00004532 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000045A4 - 000045A5 (0x2 bytes), align: 1
+  Segment part 69.            Intra module refs:   sysclk_init_opt
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           cpu_irq_restore         000045A4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000045A6 - 000045FD (0x58 bytes), align: 1
+  Segment part 70.            Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sysclk_init_opt         000045A6 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000045FE - 00004607 (0xa bytes), align: 1
+  Segment part 71.            Intra module refs:   nvm_eeprom_flush_buffer
+                                                   nvm_eeprom_write_byte
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine11           000045FE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004608 - 0000460B (0x4 bytes), align: 1
+  Segment part 72.            Intra module refs:   ?Subroutine11
+                                                   isp_start_appli
+                                                   main
+                                                   nvm_issue_command
+                                                   sysclk_init_opt
+                                                   udd_enable
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000460C - 00004613 (0x8 bytes), align: 1
+  Segment part 73.            Intra module refs:   ?Subroutine1
+                                                   sysclk_init_opt
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine43           0000460C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004614 - 00004625 (0x12 bytes), align: 1
+  Segment part 74.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00004614        ?need_segment_init (?C_STARTUP)
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004626 - 00004637 (0x12 bytes), align: 1
+  Segment part 75.            Intra module refs:   handler_USB_BUSEVENT_vect
+                                                   udc_reqstd
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udc_reset               00004626 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004638 - 00004643 (0xc bytes), align: 1
+  Segment part 76.            Intra module refs:   udc_reqstd
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udc_valid_address       00004638 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004644 - 0000464F (0xc bytes), align: 1
+  Segment part 77.            Intra module refs:   ?Subroutine60
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udd_set_setup_payload   00004644 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004650 - 0000469F (0x50 bytes), align: 1
+  Segment part 78.            Intra module refs:   udc_reqstd
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udc_req_std_dev_get_descriptor
+                                   00004650 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000046A0 - 000046B3 (0x14 bytes), align: 1
+  Segment part 79.            Intra module refs:   ?Subroutine26
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_reset_protocol
+                                   000046A0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000046B4 - 000046EB (0x38 bytes), align: 1
+  Segment part 80.            Intra module refs:   udc_reqstd
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udi_dfu_atmel_enable    000046B4 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000046EC - 00004743 (0x58 bytes), align: 1
+  Segment part 81.            Intra module refs:   udc_process_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udc_reqstd              000046EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004744 - 00004747 (0x4 bytes), align: 1
+  Segment part 82.            Intra module refs:   udc_reqstd
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine19           00004744 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004748 - 0000474D (0x6 bytes), align: 1
+  Segment part 83.            Intra module refs:   ?Subroutine19
+                                                   udd_ctrl_setup_received
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000474E - 00004785 (0x38 bytes), align: 1
+  Segment part 84.            Intra module refs:   udd_ctrl_setup_received
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udc_process_setup       0000474E 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004786 - 0000478B (0x6 bytes), align: 1
+  Segment part 85.            Intra module refs:   udc_process_setup
+                                                   udc_reqstd
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine27           00004786 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000478C - 0000478D (0x2 bytes), align: 1
+  Segment part 86.            Intra module refs:   udc_process_setup
+                                                   udi_dfu_atmel_reset_protocol
+                                                   udi_dfu_atmel_select_memory
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine18           0000478C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000478E - 00004791 (0x4 bytes), align: 1
+  Segment part 87.            Intra module refs:   ?Subroutine18
+                                                   udc_process_setup
+                                                   udc_req_std_dev_get_descriptor
+                                                   udc_reqstd
+                                                   udd_ctrl_interrupt_error
+                                                   udd_ctrl_interrupt_tc_setup
+                                                   udi_dfu_atmel_blankcheck
+                                                   udi_dfu_atmel_mem_protected
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+                                                   udi_dfu_atmel_select_memory
+                                                   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine56           0000478E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004792 - 000047FB (0x6a bytes), align: 1
+  Segment part 88.            Intra module refs:   udc_process_setup
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udi_dfu_atmel_setup     00004792 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000047FC - 00004801 (0x6 bytes), align: 1
+  Segment part 89.            Intra module refs:   udd_ctrl_endofrequest
+                                                   udi_dfu_atmel_mem_read
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine52           000047FC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004802 - 00004803 (0x2 bytes), align: 1
+  Segment part 90.            Intra module refs:   udi_dfu_atmel_enable
+                                                   udi_dfu_atmel_setup
+                                                   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine26           00004802 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004804 - 00004807 (0x4 bytes), align: 1
+  Segment part 91.            Intra module refs:   udd_ctrl_endofrequest
+                                                   udd_ctrl_out_received
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine24           00004804 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004808 - 0000480F (0x8 bytes), align: 1
+  Segment part 92.            Intra module refs:   ?Subroutine24
+                                                   udd_ctrl_out_received
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004810 - 00004811 (0x2 bytes), align: 1
+  Segment part 93.            Intra module refs:   udi_dfu_atmel_mem_read
+                                                   udi_dfu_atmel_mem_send_last_add
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine22           00004810 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004812 - 00004813 (0x2 bytes), align: 1
+  Segment part 94.            Intra module refs:   ?Subroutine0
+                                                   ?Subroutine22
+                                                   udc_req_std_dev_get_descriptor
+                                                   udc_reqstd
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine60           00004812 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004814 - 00004849 (0x36 bytes), align: 1
+  Segment part 95.            Intra module refs:   udi_dfu_atmel_select_memory
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_sel_mem   00004814 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000484A - 00004869 (0x20 bytes), align: 1
+  Segment part 96.            Intra module refs:   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_select_memory
+                                   0000484A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000486A - 00004875 (0xc bytes), align: 1
+  Segment part 97.            Intra module refs:   udi_dfu_atmel_select_memory
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine28           0000486A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004876 - 000048E7 (0x72 bytes), align: 1
+  Segment part 98.            Intra module refs:   udi_dfu_atmel_blankcheck
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_check
+                                   00004876 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000048E8 - 000048EB (0x4 bytes), align: 1
+  Segment part 99.            Intra module refs:   nvm_eeprom_write_byte
+                                                   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_mem_getaddr
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine14           000048E8 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000048EC - 000048FB (0x10 bytes), align: 1
+  Segment part 100.           Intra module refs:   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_blankcheck
+                                   000048EC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000048FC - 0000491F (0x24 bytes), align: 1
+  Segment part 101.           Intra module refs:   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_read      000048FC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004920 - 00004923 (0x4 bytes), align: 1
+  Segment part 102.           Intra module refs:   udi_dfu_atmel_enable
+                                                   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine50           00004920 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004924 - 00004927 (0x4 bytes), align: 1
+  Segment part 103.           Intra module refs:   ?Subroutine50
+                                                   isp_erase_chip
+                                                   udc_process_setup
+                                                   udc_req_std_dev_get_descriptor
+                                                   udc_reqstd
+                                                   udd_ctrl_interrupt_error
+                                                   udd_ctrl_interrupt_tc_setup
+                                                   udi_dfu_atmel_blankcheck
+                                                   udi_dfu_atmel_mem_send_last_add
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+                                                   udi_dfu_atmel_select_memory
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004928 - 0000492D (0x6 bytes), align: 1
+  Segment part 104.           Intra module refs:   udi_dfu_atmel_blankcheck
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine33           00004928 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000492E - 00004931 (0x4 bytes), align: 1
+  Segment part 105.           Intra module refs:   ?Subroutine33
+                                                   ?Subroutine41
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine57           0000492E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004932 - 0000493B (0xa bytes), align: 1
+  Segment part 106.           Intra module refs:   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine32           00004932 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000493C - 0000493D (0x2 bytes), align: 1
+  Segment part 107.           Intra module refs:   udi_dfu_atmel_blankcheck
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine23           0000493C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000493E - 00004945 (0x8 bytes), align: 1
+  Segment part 108.           Intra module refs:   ?Subroutine23
+                                                   udi_dfu_atmel_mem_getaddr
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004946 - 00004951 (0xc bytes), align: 1
+  Segment part 109.           Intra module refs:   udi_dfu_atmel_blankcheck
+                                                   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine16           00004946 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004952 - 0000495F (0xe bytes), align: 1
+  Segment part 110.           Intra module refs:   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_protected
+                                   00004952 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004960 - 0000498D (0x2e bytes), align: 1
+  Segment part 111.           Intra module refs:   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_program   00004960 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000498E - 00004995 (0x8 bytes), align: 1
+  Segment part 112.           Intra module refs:   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine20           0000498E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004996 - 000049F1 (0x5c bytes), align: 1
+  Segment part 113.           Intra module refs:   udi_dfu_atmel_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_flip_msg_decode
+                                   00004996 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 000049F2 - 00004A35 (0x44 bytes), align: 1
+  Segment part 114.           Intra module refs:   ?Subroutine33
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_getaddr
+                                   000049F2 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A36 - 00004A3B (0x6 bytes), align: 1
+  Segment part 115.           Intra module refs:   nvm_eeprom_write_byte
+                                                   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+                                                   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_mem_getaddr
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine58           00004A36 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A3C - 00004A61 (0x26 bytes), align: 1
+  Segment part 116.           Intra module refs:   udi_dfu_atmel_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_read
+                                   00004A3C 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A62 - 00004A65 (0x4 bytes), align: 1
+  Segment part 117.           Intra module refs:   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_mem_read
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine31           00004A62 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A66 - 00004A6B (0x6 bytes), align: 1
+  Segment part 118.           Intra module refs:   ?Subroutine0
+                                                   ?Subroutine22
+                                                   ?Subroutine31
+                                                   udi_dfu_atmel_mem_check
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine45           00004A66 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A6C - 00004A81 (0x16 bytes), align: 1
+  Segment part 119.           Intra module refs:   udi_dfu_atmel_mem_check
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_send_last_add
+                                   00004A6C 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A82 - 00004A87 (0x6 bytes), align: 1
+  Segment part 120.           Intra module refs:   ?Subroutine16
+                                                   ?Subroutine18
+                                                   ?Subroutine20
+                                                   Segment part 83
+                                                   udc_req_std_dev_get_descriptor
+                                                   udc_reqstd
+                                                   udd_ctrl_send_zlp_in
+                                                   udd_ctrl_setup_received
+                                                   udd_set_setup_payload
+                                                   udi_dfu_atmel_mem_send_last_add
+                                                   udi_dfu_atmel_mem_write
+                                                   udi_dfu_atmel_program
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine44           00004A82 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004A88 - 00004AE5 (0x5e bytes), align: 1
+  Segment part 121.           Intra module refs:   udi_dfu_atmel_program
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_mem_write
+                                   00004A88 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004AE6 - 00004AF3 (0xe bytes), align: 1
+  Segment part 122.           Intra module refs:   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_mem_write
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine29           00004AE6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004AF4 - 00004AFB (0x8 bytes), align: 1
+  Segment part 123.           Intra module refs:   udi_dfu_atmel_mem_write
+                                                   udi_dfu_atmel_program
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine0            00004AF4 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004AFC - 00004B43 (0x48 bytes), align: 1
+  Segment part 124.           Intra module refs:   Segment part 136
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_init           00004AFC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004B44 - 00004B65 (0x22 bytes), align: 1
+  Segment part 125.           Intra module refs:   ?Subroutine46
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ep_get_ctrl         00004B44 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004B66 - 00004B93 (0x2e bytes), align: 1
+  Segment part 126.           Intra module refs:   handler_USB_BUSEVENT_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ep_init             00004B66 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004B94 - 00004BF1 (0x5e bytes), align: 1
+  Segment part 127.           Intra module refs:   handler_USB_BUSEVENT_vect::??INTVEC 0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           handler_USB_BUSEVENT_vect
+                                   00004B94 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004BF2 - 00004BF5 (0x4 bytes), align: 1
+  Segment part 128.           Intra module refs:   handler_USB_BUSEVENT_vect
+                                                   handler_USB_TRNCOMPL_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine61           00004BF2 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 000020F4 - 00002132 (0x3f bytes), align: 2
+  Segment part 29.            Intra module refs:   ?Subroutine12
+                                                   ?Subroutine19
+                                                   ?Subroutine27
+                                                   ?Subroutine28
+                                                   ?Subroutine34
+                                                   ?Subroutine36
+                                                   ?Subroutine44
+                                                   ?Subroutine47
+                                                   ?Subroutine49
+                                                   handler_USB_BUSEVENT_vect
+                                                   udc_valid_address
+                                                   udd_ctrl_endofrequest
+                                                   udd_ctrl_in_sent
+                                                   udd_ctrl_init
+                                                   udd_ctrl_interrupt_error
+                                                   udd_ctrl_send_zlp_out
+                                                   udd_ctrl_setup_received
+                                                   udd_ctrl_stall_data
+                                                   udd_enable
+                                                   udd_ep_get_ctrl
+                                                   udi_dfu_atmel_mem_check
+                                                   udi_dfu_atmel_mem_getaddr
+                                                   udi_dfu_atmel_mem_protected
+                                                   udi_dfu_atmel_mem_read
+                                                   udi_dfu_atmel_program
+                                                   udi_dfu_atmel_sel_mem
+                                                   udi_dfu_atmel_setup
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           udd_g_ctrlreq           0000210A 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_in_sent::b_shortpacket
+                                   00002132 
+           udd_ctrl_payload_nb_trans
+                                   0000212E 
+           udd_ctrl_prev_payload_nb_trans
+                                   0000212C 
+           udd_ep_control_state    00002131 
+           udd_sram                000020F4 
+           udi_dfu_atmel_mem_add   00002128 
+           udi_dfu_atmel_mem_b_protected
+                                   00002130 
+           udi_dfu_atmel_mem_nb_data
+                                   0000212A 
+           udi_dfu_atmel_mem_sel   0000211A 
+           udi_dfu_atmel_status    00002122 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 00002133 - 00002172 (0x40 bytes), align: 0
+  Segment part 30.            Intra module refs:   ?Subroutine33
+                                                   udi_dfu_atmel_select_memory
+                                                   udi_dfu_atmel_setup
+                                                   udi_dfu_flip_msg_decode
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_flip_msg        00002133 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 00002174 - 00002573 (0x400 bytes), align: 1
+  Segment part 31.            Intra module refs:   ?Subroutine45
+                                                   udi_dfu_atmel_mem_send_last_add
+                                                   udi_dfu_atmel_mem_write
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udi_dfu_atmel_buf_trans
+                                   00002174 
+    -------------------------------------------------------------------------
+NEAR_Z
+  Relative segment, address: DATA 00002574 - 000025B3 (0x40 bytes), align: 0
+  Segment part 32.            Intra module refs:   handler_USB_BUSEVENT_vect
+                                                   udd_ctrl_out_received
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_buffer         00002574 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004BF6 - 00004BFB (0x6 bytes), align: 1
+  Segment part 129.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_overflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_send_zlp_out   00004BF6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004BFC - 00004BFD (0x2 bytes), align: 1
+  Segment part 130.           Intra module refs:   udd_ctrl_out_received
+                                                   udd_ctrl_send_zlp_out
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine17           00004BFC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004BFE - 00004C03 (0x6 bytes), align: 1
+  Segment part 131.           Intra module refs:   ?Subroutine17
+                                                   udd_ctrl_in_sent
+                                                   udd_ctrl_send_zlp_in
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004C04 - 00004C09 (0x6 bytes), align: 1
+  Segment part 132.           Intra module refs:   ?Subroutine17
+                                                   udd_ctrl_init
+                                                   udd_ctrl_interrupt_tc_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine47           00004C04 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004C0A - 00004C19 (0x10 bytes), align: 1
+  Segment part 133.           Intra module refs:   ?Subroutine38
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_endofrequest   00004C0A 
+               calls indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004C1A - 00004C9B (0x82 bytes), align: 1
+  Segment part 134.           Intra module refs:   handler_USB_TRNCOMPL_vect
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_in_sent        00004C1A 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004C9C - 00004C9D (0x2 bytes), align: 1
+  Segment part 135.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine38           00004C9C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004C9E - 00004C9F (0x2 bytes), align: 1
+  Segment part 136.           Intra module refs:   ?Subroutine38
+                                                   handler_USB_BUSEVENT_vect
+                                                   udd_ctrl_setup_received
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CA0 - 00004CA5 (0x6 bytes), align: 1
+  Segment part 137.           Intra module refs:   udc_process_setup
+                                                   udc_req_std_dev_get_descriptor
+                                                   udd_ctrl_in_sent
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine25           00004CA0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CA6 - 00004CAB (0x6 bytes), align: 1
+  Segment part 138.           Intra module refs:   udd_ctrl_out_received
+                                                   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_stall_data     00004CA6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CAC - 00004CBD (0x12 bytes), align: 1
+  Segment part 139.           Intra module refs:   udd_ctrl_overflow
+                                                   udd_ctrl_stall_data
+                                                   udd_ctrl_underflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine34           00004CAC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CBE - 00004CDB (0x1e bytes), align: 1
+  Segment part 140.           Intra module refs:   udd_ctrl_out_received
+                                                   udd_ctrl_setup_received
+                                                   udd_ctrl_underflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_send_zlp_in    00004CBE 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CDC - 00004CE1 (0x6 bytes), align: 1
+  Segment part 141.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_init
+                                                   udd_ctrl_interrupt_tc_setup
+                                                   udd_ctrl_send_zlp_in
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine36           00004CDC 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004CE2 - 00004D73 (0x92 bytes), align: 1
+  Segment part 142.           Intra module refs:   handler_USB_TRNCOMPL_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_out_received   00004CE2 
+               calls direct and indirect
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004D74 - 00004D7B (0x8 bytes), align: 1
+  Segment part 143.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine40           00004D74 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004D7C - 00004D85 (0xa bytes), align: 1
+  Segment part 144.           Intra module refs:   ?Subroutine40
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine48           00004D7C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004D86 - 00004D8F (0xa bytes), align: 1
+  Segment part 145.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine35           00004D86 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004D90 - 00004D97 (0x8 bytes), align: 1
+  Segment part 146.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine30           00004D90 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004D98 - 00004D9F (0x8 bytes), align: 1
+  Segment part 147.           Intra module refs:   udd_ctrl_in_sent
+                                                   udd_ctrl_out_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine12           00004D98 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004DA0 - 00004DA5 (0x6 bytes), align: 1
+  Segment part 148.           Intra module refs:   ?Subroutine12
+                                                   udd_ctrl_overflow
+                                                   udd_ctrl_setup_received
+                                                   udd_ctrl_underflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine49           00004DA0 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004DA6 - 00004DD9 (0x34 bytes), align: 1
+  Segment part 149.           Intra module refs:   handler_USB_TRNCOMPL_vect::??INTVEC 4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           handler_USB_TRNCOMPL_vect
+                                   00004DA6 
+               interrupt function
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004DDA - 00004DF9 (0x20 bytes), align: 1
+  Segment part 150.           Intra module refs:   ?Subroutine61
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine37           00004DDA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004DFA - 00004E1B (0x22 bytes), align: 1
+  Segment part 151.           Intra module refs:   handler_USB_BUSEVENT_vect
+                                                   handler_USB_TRNCOMPL_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine10           00004DFA 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E1C - 00004E1D (0x2 bytes), align: 1
+  Segment part 152.           Intra module refs:   handler_USB_TRNCOMPL_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine8            00004E1C 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E1E - 00004E23 (0x6 bytes), align: 1
+  Segment part 153.           Intra module refs:   ?Subroutine8
+                                                   handler_USB_TRNCOMPL_vect
+                                                   udd_ep_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine46           00004E1E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E24 - 00004E87 (0x64 bytes), align: 1
+  Segment part 154.           Intra module refs:   udd_ctrl_interrupt_tc_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_setup_received
+                                   00004E24 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E88 - 00004E8D (0x6 bytes), align: 1
+  Segment part 155.           Intra module refs:   udd_ctrl_setup_received
+                                                   udd_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine13           00004E88 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E8E - 00004E99 (0xc bytes), align: 1
+  Segment part 156.           Intra module refs:   udd_ctrl_setup_received
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine7            00004E8E 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004E9A - 00004EB5 (0x1c bytes), align: 1
+  Segment part 157.           Intra module refs:   udd_ctrl_interrupt_error
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_underflow      00004E9A 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004EB6 - 00004EB9 (0x4 bytes), align: 1
+  Segment part 158.           Intra module refs:   handler_USB_TRNCOMPL_vect
+                                                   udd_ctrl_overflow
+                                                   udd_ctrl_underflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine41           00004EB6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004EBA - 00004ED5 (0x1c bytes), align: 1
+  Segment part 159.           Intra module refs:   udd_ctrl_interrupt_error
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_overflow       00004EBA 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004ED6 - 00004EDB (0x6 bytes), align: 1
+  Segment part 160.           Intra module refs:   handler_USB_TRNCOMPL_vect
+                                                   udd_ctrl_interrupt_tc_setup
+                                                   udd_ctrl_overflow
+                                                   udd_ctrl_underflow
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine42           00004ED6 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004EDC - 00004F09 (0x2e bytes), align: 1
+  Segment part 161.           Intra module refs:   handler_USB_BUSEVENT_vect
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_interrupt_error
+                                   00004EDC 
+               calls direct
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004F0A - 00004F0F (0x6 bytes), align: 1
+  Segment part 162.           Intra module refs:   handler_USB_BUSEVENT_vect
+                                                   udd_ctrl_interrupt_error
+                                                   udd_ctrl_interrupt_tc_setup
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine39           00004F0A 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004F10 - 00004F11 (0x2 bytes), align: 1
+  Segment part 163.           Intra module refs:   udd_enable
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           ?Subroutine15           00004F10 
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004F12 - 00004F17 (0x6 bytes), align: 1
+  Segment part 164.           Intra module refs:   ?Subroutine15
+                                                   handler_USB_BUSEVENT_vect
+                                                   udd_ctrl_init
+                                                   udd_ctrl_interrupt_error
+    -------------------------------------------------------------------------
+<CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004F18 - 00004F3D (0x26 bytes), align: 1
+  Segment part 165.           Intra module refs:   ?Subroutine41
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           udd_ctrl_interrupt_tc_setup
+                                   00004F18 
+               calls direct
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 00000034, align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?CCP                  00000034 
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 000001C0, align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?NVMADR0              000001C0 
+    -------------------------------------------------------------------------
+ABSOLUTE
+  Relative segment, address: DATA 00000020, align: 0
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __?EEPROM_PAGESIZE      00000020 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 000041F4 - 000041F7 (0x4 bytes), align: 1
+  Segment part 4. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           handler_USB_BUSEVENT_vect::??INTVEC 0
+                                   000041F4 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 000041F4 - 000041FB (0x8 bytes), align: 1
+  Segment part 5. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           handler_USB_TRNCOMPL_vect::??INTVEC 4
+                                   000041F8 
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE 00004F3E - 00004F43 (0x6 bytes), align: 0
+  Segment part 10.            Intra module refs:   mem_signature
+                                                   udc_device_status
+                                                   udd_ctrl_buffer
+                                                   udd_g_ctrlreq
+                                                   udi_dfu_atmel_buf_trans
+                                                   udi_dfu_flip_msg
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?<Segment init: NEAR_Z>
+                                   00004F3E 
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F4A - 00004F4C (0x3 bytes), align: 0
+  Segment part 12.            Intra module refs:   mem_bootloader
+    -------------------------------------------------------------------------
+INITTAB
+  Relative segment, address: CODE 00004F44 - 00004F49 (0x6 bytes), align: 0
+  Segment part 13.            Intra module refs:   Segment part 27
+                                                   isp_bootloader
+                                                   isp_eeprom
+                                                   isp_flash
+                                                   isp_memories
+                                                   isp_no_available
+                                                   isp_signature
+                                                   mem_bootloader
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?<Segment init: NEAR_I>
+                                   00004F44 
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F4D - 00004F54 (0x8 bytes), align: 0
+  Segment part 15.            Intra module refs:   isp_flash
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F55 - 00004F5C (0x8 bytes), align: 0
+  Segment part 17.            Intra module refs:   isp_eeprom
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F5D - 00004F64 (0x8 bytes), align: 0
+  Segment part 19.            Intra module refs:   isp_bootloader
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F65 - 00004F6C (0x8 bytes), align: 0
+  Segment part 21.            Intra module refs:   isp_signature
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F6D - 00004F74 (0x8 bytes), align: 0
+  Segment part 23.            Intra module refs:   isp_no_available
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F75 - 00004F96 (0x22 bytes), align: 0
+  Segment part 25.            Intra module refs:   isp_memories
+    -------------------------------------------------------------------------
+NEAR_ID
+  Relative segment, address: CODE 00004F98 - 00004FBF (0x28 bytes), align: 1
+  Segment part 28.            Intra module refs:   Segment part 27
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\main.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\nvm.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\nvm_asm.r90
+  LIBRARY MODULE, NAME : nvm_read_byte
+
+Absolute parts
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __ATxmega16C4__         00000000 
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000416E - 00004181 (0x14 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_read_byte           0000416E        ?Subroutine43 (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : nvm_common_spm
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was BOOT)
+  Relative segment, address: CODE 0000405C - 00004079 (0x1e bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_common_spm          0000405C        ?Subroutine2 (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : nvm_flash_load_word_to_buffer
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was BOOT)
+  Relative segment, address: CODE 00004038 - 0000405B (0x24 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           nvm_flash_load_word_to_buffer
+                                   00004038        nvm_flash_erase_and_write_buffer (isp)
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           wait_nvm                00004038 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\sysclk.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\sysclk_opt.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\udc_dfu_small.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\udi_dfu_atmel.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\udi_dfu_atmel_desc.r90
+    *************************************************************************
+
+  FILE NAME : C:\Users\ju\Desktop\common.services.usb.class.dfu_atmel.device.bootloader.atxmega16a4u\common\services\usb\class\dfu_flip\device\bootloader\xmega\atxmega16a4u\iar\Debug\Obj\usb_device.r90
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\avr\LIB\DLIB\dlAVR-3s-xmega-sf-n.r90
+  LIBRARY MODULE, NAME : ?S_SHL_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004190 - 00004199 (0xa bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?S_SHL_L02              00004194        udd_ep_get_ctrl (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?US_SHR_L02
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000419A - 000041A3 (0xa bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?US_SHR_L02             0000419E        nvm_eeprom_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?MOVE_LONG_L07
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004158 - 0000416D (0x16 bytes), align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ML_SRAM_SRAM_16_L07    00004158        udi_dfu_atmel_sel_mem (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?PROLOGUE_L09
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004140 - 00004141 (0x2 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE11_L09         00004140        nvm_flash_erase_and_write_buffer (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004142 - 00004143 (0x2 bytes), align: 1
+  Segment part 6.             Intra module refs:   ?PROLOGUE11_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE10_L09         00004142 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004144 - 00004145 (0x2 bytes), align: 1
+  Segment part 7.             Intra module refs:   ?PROLOGUE10_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE9_L09          00004144 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004146 - 00004147 (0x2 bytes), align: 1
+  Segment part 8.             Intra module refs:   ?PROLOGUE9_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE8_L09          00004146 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004148 - 00004149 (0x2 bytes), align: 1
+  Segment part 9.             Intra module refs:   ?PROLOGUE8_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE7_L09          00004148 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000414A - 0000414B (0x2 bytes), align: 1
+  Segment part 10.            Intra module refs:   ?PROLOGUE7_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE6_L09          0000414A        nvm_eeprom_erase_and_write_buffer (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000414C - 0000414D (0x2 bytes), align: 1
+  Segment part 11.            Intra module refs:   ?PROLOGUE6_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE5_L09          0000414C 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000414E - 0000414F (0x2 bytes), align: 1
+  Segment part 12.            Intra module refs:   ?PROLOGUE5_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE4_L09          0000414E        ?Subroutine12 (isp)
+                                                   ?Subroutine14 (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004150 - 00004151 (0x2 bytes), align: 1
+  Segment part 13.            Intra module refs:   ?PROLOGUE4_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE3_L09          00004150 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004152 - 00004153 (0x2 bytes), align: 1
+  Segment part 14.            Intra module refs:   ?PROLOGUE3_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE2_L09          00004152 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004154 - 00004155 (0x2 bytes), align: 1
+  Segment part 15.            Intra module refs:   ?PROLOGUE2_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PROLOGUE1_L09          00004154 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004156 - 00004157 (0x2 bytes), align: 1
+  Segment part 16.            Intra module refs:   ?PROLOGUE1_L09
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?EPILOGUE_B_L09
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004120 - 00004121 (0x2 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B11_L09       00004120        nvm_flash_erase_and_write_buffer (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004122 - 00004123 (0x2 bytes), align: 1
+  Segment part 6.             Intra module refs:   ?EPILOGUE_B11_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B10_L09       00004122 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004124 - 00004125 (0x2 bytes), align: 1
+  Segment part 7.             Intra module refs:   ?EPILOGUE_B10_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B9_L09        00004124 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004126 - 00004127 (0x2 bytes), align: 1
+  Segment part 8.             Intra module refs:   ?EPILOGUE_B9_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B8_L09        00004126 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004128 - 00004129 (0x2 bytes), align: 1
+  Segment part 9.             Intra module refs:   ?EPILOGUE_B8_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B7_L09        00004128 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000412A - 0000412B (0x2 bytes), align: 1
+  Segment part 10.            Intra module refs:   ?EPILOGUE_B7_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B6_L09        0000412A        nvm_eeprom_erase_and_write_buffer (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000412C - 0000412D (0x2 bytes), align: 1
+  Segment part 11.            Intra module refs:   ?EPILOGUE_B6_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B5_L09        0000412C 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000412E - 0000412F (0x2 bytes), align: 1
+  Segment part 12.            Intra module refs:   ?EPILOGUE_B5_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B4_L09        0000412E        ?Subroutine58 (isp)
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004130 - 00004131 (0x2 bytes), align: 1
+  Segment part 13.            Intra module refs:   ?EPILOGUE_B4_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B3_L09        00004130 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004132 - 00004133 (0x2 bytes), align: 1
+  Segment part 14.            Intra module refs:   ?EPILOGUE_B3_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B2_L09        00004132 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004134 - 00004135 (0x2 bytes), align: 1
+  Segment part 15.            Intra module refs:   ?EPILOGUE_B2_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B1_L09        00004134 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004136 - 0000413F (0xa bytes), align: 1
+  Segment part 16.            Intra module refs:   ?EPILOGUE_B1_L09
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?EPILOGUE_B0_L09        00004136 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR4_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R4_is_cg_reg
+                                   000041A4        nvm_eeprom_erase_and_write_buffer (isp)
+                                                   nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR5_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R5_is_cg_reg
+                                   000041A4        nvm_eeprom_erase_and_write_buffer (isp)
+                                                   nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR6_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R6_is_cg_reg
+                                   000041A4        nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR7_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R7_is_cg_reg
+                                   000041A4        nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR8_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R8_is_cg_reg
+                                   000041A4        nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR9_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R9_is_cg_reg
+                                   000041A4        nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?REGISTER_CGREGR10_L10
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 000041A4, align: 1
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?Register_R10_is_cg_reg
+                                   000041A4        nvm_flash_erase_and_write_buffer (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?memcpy
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004100 - 0000411F (0x20 bytes), align: 1
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           memcpy                  00004100        Segment part 53 (isp)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?segment_init
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 0000407A - 00004085 (0xc bytes), align: 1
+  Segment part 3.             Intra module refs:   __segment_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __memclr                0000407A 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004086 - 00004091 (0xc bytes), align: 1
+  Segment part 4.             Intra module refs:   __segment_init
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           __flashcpy              00004086 
+    -------------------------------------------------------------------------
+<BOOT,CODE> 1 (was CODE)
+  Relative segment, address: CODE 00004092 - 000040C5 (0x34 bytes), align: 1
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __segment_init          00004092        ?need_segment_init (?C_STARTUP)
+               calls direct
+
+
+
+
+                ****************************************
+                *                                      *
+                *            MODULE SUMMARY            *
+                *                                      *
+                ****************************************
+
+Module                             CODE       DATA
+------                             ----       ----
+                               (Rel)  (Abs)  (Rel)
+?C_STARTUP                       112      2
+?EPILOGUE_B_L09                   32
+?MOVE_LONG_L07                    22
+?PROLOGUE_L09                     24
+?RESET                                    2
+?S_SHL_L02                        10
+?US_SHR_L02                       10
+?memcpy                           32
+?segment_init                     76
+ccp_write_io                      14
+isp                            3 521         1 346
+  + common                         8
+nvm_common_spm                    30
+nvm_flash_load_word_to_buffer     36
+nvm_read_byte                     20
+N/A (command line)                             224
+N/A (alignment)                    1             2
+----------                     -----      -  -----
+Total:                         3 940      4  1 572
+  + common                         8
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+<BOOT,CODE> 1        CODE          00004002 - 000041A3         1A2   rel    1
+INTVEC               CODE          000041F4 - 000041FB           8   com    1
+STARTBOOT            CODE          000041FC - 000041FD           2   rel    0
+<CODE> 1             CODE          000041FE - 00004F3D         D40   rel    1
+INITTAB              CODE          00004F3E - 00004F49           C   rel    0
+NEAR_ID              CODE          00004F4A - 00004FBF          76   rel    1
+ABSOLUTE             DATA               00000020                     rel    0
+                     DATA               00000034                   
+                     DATA               000001C0                   
+SRAM_NO_INIT         DATA          00002000 - 00002001           2   rel    0
+RSTACK               DATA          00002002 - 00002071          70   dse    0
+NEAR_I               DATA          00002072 - 000020E7          76   rel    1
+NEAR_Z               DATA          000020E8 - 000025B3         4CC   rel    2
+CSTACK               DATA          000025B4 - 00002623          70   dse    0
+                     CODE          00004000 - 00004001           2  aseg  
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 3 948 bytes of CODE memory (+ 4 absolute )
+ 1 572 bytes of DATA memory
+
+Errors: none
+Warnings: none
+
