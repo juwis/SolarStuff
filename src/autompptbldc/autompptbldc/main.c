@@ -211,8 +211,8 @@ ISR(ACA_AC0_vect)
 		
 		average_time = last_rt_time;
 		
-		commutation_time = average_time / 2;
-		comperator_sleep_time = average_time/4; // time ignore comparator changes
+		commutation_time = average_time / 24;
+		comperator_sleep_time = average_time/32; // time ignore comparator changes
 
 
 	}
@@ -225,12 +225,6 @@ ISR(ACA_AC0_vect)
 
 	//increase COMMUTATION_INDEX_SENSED by one looping in the range 0-5 via the fabulous modulo operator %
 	COMMUTATION_INDEX_SENSED = (COMMUTATION_INDEX_SENSED + 1) % 6;
-
-	//set_ac_interrupt();
-
-	//COMMUTATION_INDEX = COMMUTATION_INDEX_SENSED;
-	
-	//SET_PHASE_PWM(COMMUTATION_INDEX, BREAK);
 }
 
 // Timer/Counter TCD1 Overflow/Underflow interrupt service routine
@@ -701,10 +695,10 @@ int main(void)
 	// high impedance sources
 	// no current limit
 	// unsigned
-	ADCA.CTRLB=(0<<ADC_IMPMODE_bp) | ADC_CURRLIMIT_NO_gc | (0<<ADC_CONMODE_bp) | ADC_RESOLUTION_12BIT_gc;
+	ADCA.CTRLB=(0<<ADC_IMPMODE_bp) | ADC_CURRLIMIT_HIGH_gc | (0<<ADC_CONMODE_bp) | ADC_RESOLUTION_12BIT_gc;
 
-	// 0.5MHz
-	ADCA.PRESCALER=ADC_PRESCALER_DIV64_gc;
+	// 62,500 kHz
+	ADCA.PRESCALER=ADC_PRESCALER_DIV512_gc;
 
 	// Ref 1V internal
 	ADCA.REFCTRL=ADC_REFSEL_INT1V_gc | (0<<ADC_TEMPREF_bp) | (1<<ADC_BANDGAP_bp);
@@ -832,6 +826,7 @@ int main(void)
 		ADC=adc_read();
 		transmitter_power = get_transmitter_power();
 	
+		printf("%08u\r\n", average_time);	
 		
 		_delay_us(100);
 	
@@ -867,7 +862,7 @@ int main(void)
 				out_power--;
 			}
 			
-			printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);	
+			//printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);	
 			TCC0.CCA = out_power;
 		}
 		
