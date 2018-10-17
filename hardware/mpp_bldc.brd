@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -30,42 +30,42 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="58" name="bCAD" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="yes"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
@@ -81,72 +81,72 @@
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="99" name="SpiceOrder" color="5" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
-<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="134" name="silk_top" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="135" name="silk_bottom" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="IDFDebug" color="4" fill="1" visible="no" active="yes"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="no" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="yes"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="no" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="no" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="no" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="yes"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="no" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="no" active="yes"/>
+<layer number="146" name="DrillLegend_01-20" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
-<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
-<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
-<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
-<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
-<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
-<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
-<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -155,21 +155,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
-<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <board>
 <plain>
@@ -3263,8 +3263,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <element name="C8" library="rcl" package="C0603K" value="10u/10V" x="15.367" y="14.0462" smashed="yes" rot="R90"/>
 <element name="R5" library="rcl" package="R0603" value="4k7" x="7.7724" y="8.2042" smashed="yes" rot="R180"/>
 <element name="U3" library="microbuilder" package="SOT23-5" value="MIC5504-2.8YM5-TR" x="15.0622" y="18.669" smashed="yes" rot="R270"/>
-<element name="C9" library="rcl" package="C0603" value="100n/10V" x="17.9578" y="18.5928" smashed="yes" rot="R270"/>
-<element name="C10" library="rcl" package="C0805" value="10u/10V" x="11.2014" y="19.2532" smashed="yes" rot="R180"/>
+<element name="C9" library="rcl" package="C0603" value="100n/25V" x="17.9578" y="18.5928" smashed="yes" rot="R270"/>
+<element name="C10" library="rcl" package="C0603K" value="10u/10V" x="11.2014" y="19.2532" smashed="yes" rot="R180"/>
 <element name="TP18" library="testpad" package="TP19SQ" value="TPSQTP19SQ" x="2.4384" y="3.9624" smashed="yes" rot="R180">
 <attribute name="TP_SIGNAL_NAME" value="" x="2.4384" y="6.5024" size="1" layer="37" rot="R180"/>
 </element>
@@ -3303,9 +3303,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <element name="U$4" library="mpp_bldc_ng_2" package="DFN-8" value="ADP3110A" x="22.479" y="16.5354" smashed="yes" rot="R270"/>
 <element name="U$5" library="mpp_bldc_ng_2" package="DFN-8" value="ADP3110A" x="22.8092" y="9.4996" smashed="yes" rot="R270"/>
 <element name="U$6" library="mpp_bldc_ng_2" package="DFN-8" value="ADP3110A" x="22.7838" y="2.921" smashed="yes" rot="R270"/>
-<element name="C2" library="rcl" package="C0603" value="1u/25V" x="20.4978" y="8.4074" smashed="yes" rot="R90"/>
+<element name="C2" library="rcl" package="C0603" value="1u/25V" x="24.8666" y="9.4742" smashed="yes" rot="R90"/>
 <element name="C3" library="rcl" package="C0603" value="1u/25V" x="24.6634" y="16.6624" smashed="yes" rot="R90"/>
-<element name="C4" library="rcl" package="C0603" value="1u/25V" x="20.2438" y="2.5908" smashed="yes" rot="R90"/>
+<element name="C4" library="rcl" package="C0603" value="1u/25V" x="24.765" y="3.1496" smashed="yes" rot="R90"/>
 <element name="D1" library="mpp_bldc_ng_2" package="POWERDI323" value="PD3S160" x="23.2664" y="19.4818" smashed="yes" rot="R180"/>
 <element name="D2" library="mpp_bldc_ng_2" package="POWERDI323" value="PD3S160" x="23.4442" y="13.1318" smashed="yes" rot="R180"/>
 <element name="D3" library="mpp_bldc_ng_2" package="POWERDI323" value="PD3S160" x="23.2918" y="6.410959375" smashed="yes" rot="R180"/>
@@ -3321,8 +3321,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 </element>
 <element name="R2" library="resistor" package="R0603" value="1.6k" x="6.7056" y="18.6182" smashed="yes" rot="R90"/>
 <element name="C11" library="rcl" package="C0603" value="100n/25V" x="20.1168" y="18.2626" smashed="yes" rot="R90"/>
-<element name="C12" library="rcl" package="C0603" value="100n/25V" x="24.9428" y="9.5758" smashed="yes" rot="R90"/>
-<element name="C13" library="rcl" package="C0603" value="100n/25V" x="25.0952" y="2.921" smashed="yes" rot="R90"/>
+<element name="C12" library="rcl" package="C0603" value="100n/25V" x="20.6248" y="8.7122" smashed="yes" rot="R90"/>
+<element name="C13" library="rcl" package="C0603" value="100n/25V" x="20.2184" y="3.3782" smashed="yes" rot="R90"/>
 <element name="U1" library="linear" package="SOT95P251X112-3N" value="LM3480IM3-5" x="19.7104" y="14.097" smashed="yes">
 <attribute name="MPN" value="LM3480IM3-12" x="19.7104" y="14.097" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="1469099" x="19.7104" y="14.097" size="1.778" layer="27" display="off"/>
@@ -3367,9 +3367,9 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <attribute name="SPICEPREFIX" value="" x="5.5372" y="3.9624" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" package="SMBJ" package3d_urn="urn:adsk.eagle:package:43442/2" value="SMBJ18A-E3/52GICT-ND" x="28.8544" y="5.08" smashed="yes" rot="MR180"/>
-<element name="U$11" library="we-symbol" package="OSHW_2MM" value="" x="35.2552" y="19.4056"/>
-<element name="X3" library="we-symbol" package="PASSER_07MM" value="PASSER-07" x="35.4584" y="0.9144" rot="MR0"/>
-<element name="X4" library="we-symbol" package="PASSER_07MM" value="PASSER-07" x="3.6068" y="19.4056" rot="MR0"/>
+<element name="U$11" library="we-symbol" package="OSHW_2MM" value="" x="35.2552" y="19.4056" smashed="yes"/>
+<element name="X3" library="we-symbol" package="PASSER_07MM" value="PASSER-07" x="35.4584" y="0.9144" smashed="yes" rot="MR0"/>
+<element name="X4" library="we-symbol" package="PASSER_07MM" value="PASSER-07" x="3.6068" y="19.4056" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="VCC">
@@ -3434,7 +3434,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="20.5096" y1="12.1158" x2="20.5096" y2="11.2268" width="0.1524" layer="1"/>
 <wire x1="20.5096" y1="11.2268" x2="18.4522" y2="9.1694" width="0.1524" layer="1"/>
 <wire x1="18.4522" y1="9.1694" x2="18.4522" y2="8.2296" width="0.1524" layer="1"/>
-<wire x1="21.6154" y1="12.192" x2="19.939" y2="12.192" width="0.1524" layer="16"/>
 <via x="19.939" y="12.192" extent="1-16" drill="0.3048"/>
 <wire x1="19.939" y1="12.192" x2="19.939" y2="12.1158" width="0.1524" layer="1"/>
 <wire x1="19.939" y1="12.1158" x2="20.5096" y2="12.1158" width="0.1524" layer="1"/>
@@ -3446,9 +3445,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <vertex x="26.0096" y="0.5"/>
 <vertex x="26.0096" y="4.5"/>
 </polygon>
-<via x="21.6154" y="12.192" extent="1-16" drill="0.3048"/>
-<wire x1="21.6154" y1="12.192" x2="21.7424" y2="12.192" width="0.1524" layer="1"/>
-<wire x1="21.7424" y1="12.192" x2="22.0218" y2="12.4714" width="0.1524" layer="1"/>
+<via x="21.2598" y="12.192" extent="1-16" drill="0.3048"/>
+<wire x1="22.0218" y1="12.4714" x2="21.7424" y2="12.192" width="0.1524" layer="1"/>
 <wire x1="22.0218" y1="12.4714" x2="22.9362" y2="12.4714" width="0.1524" layer="1"/>
 <wire x1="22.9362" y1="12.4714" x2="23.1394" y2="12.6746" width="0.1524" layer="1"/>
 <wire x1="23.1394" y1="12.6746" x2="23.1394" y2="13.462" width="0.1524" layer="1"/>
@@ -3483,6 +3481,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="20.0436" y1="3.527" x2="20.225" y2="3.7084" width="0.1524" layer="16"/>
 <contactref element="D4" pad="C"/>
 <wire x1="27.1496" y1="9.3472" x2="27.5052" y2="8.9916" width="0.4064" layer="16"/>
+<wire x1="21.7424" y1="12.192" x2="21.2598" y2="12.192" width="0.1524" layer="1"/>
+<wire x1="21.2598" y1="12.192" x2="19.939" y2="12.192" width="0.1524" layer="16"/>
 </signal>
 <signal name="GND">
 <contactref element="R18" pad="2"/>
@@ -3711,7 +3711,7 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="9.3552" y1="16.3298" x2="9.3552" y2="17.4832" width="0.254" layer="1"/>
 <wire x1="9.3552" y1="17.4832" x2="10.2362" y2="18.3642" width="0.254" layer="1"/>
 <wire x1="10.2362" y1="18.3642" x2="10.2362" y2="19.238" width="0.254" layer="1"/>
-<wire x1="10.2362" y1="19.238" x2="10.2514" y2="19.2532" width="0.254" layer="1"/>
+<wire x1="10.2362" y1="19.238" x2="10.3264" y2="19.2532" width="0.254" layer="1"/>
 <wire x1="5.0156" y1="19.431" x2="5.0156" y2="18.8096" width="0.254" layer="1"/>
 <wire x1="5.0156" y1="18.8096" x2="5.0546" y2="18.7706" width="0.254" layer="1"/>
 <via x="5.0546" y="18.7706" extent="1-16" drill="0.3048"/>
@@ -3756,23 +3756,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="14.5334" y1="14.0048" x2="13.1802" y2="14.0048" width="0.1524" layer="1"/>
 <wire x1="22.7584" y1="2.921" x2="22.5084" y2="2.671" width="0.1524" layer="1"/>
 <wire x1="22.5084" y1="2.671" x2="22.5084" y2="1.621" width="0.1524" layer="1"/>
-<wire x1="22.7584" y1="2.921" x2="23.2918" y2="2.3876" width="0.1524" layer="1"/>
-<wire x1="23.2918" y1="2.3876" x2="24.2316" y2="2.3876" width="0.1524" layer="1"/>
-<wire x1="24.2316" y1="2.3876" x2="24.5482" y2="2.071" width="0.1524" layer="1"/>
-<wire x1="24.5482" y1="2.071" x2="25.0952" y2="2.071" width="0.1524" layer="1"/>
 <wire x1="22.7838" y1="9.4996" x2="23.368" y2="8.9154" width="0.1524" layer="1"/>
-<wire x1="23.368" y1="8.9154" x2="24.0284" y2="8.9154" width="0.1524" layer="1"/>
-<wire x1="24.0284" y1="8.9154" x2="24.218" y2="8.7258" width="0.1524" layer="1"/>
-<wire x1="24.218" y1="8.7258" x2="24.9428" y2="8.7258" width="0.1524" layer="1"/>
 <wire x1="22.5338" y1="8.1996" x2="22.5338" y2="9.4996" width="0.1524" layer="1"/>
 <wire x1="22.5338" y1="9.4996" x2="22.7838" y2="9.4996" width="0.1524" layer="1"/>
-<wire x1="24.9428" y1="8.7258" x2="25.3882" y2="8.7258" width="0.1524" layer="1"/>
-<wire x1="25.3882" y1="8.7258" x2="26.8986" y2="10.2362" width="0.1524" layer="1"/>
-<wire x1="26.8986" y1="10.2362" x2="29.1338" y2="10.2362" width="0.1524" layer="1"/>
 <wire x1="29.1338" y1="10.2362" x2="29.2608" y2="10.3632" width="0.1524" layer="1"/>
-<wire x1="25.0952" y1="2.071" x2="25.2866" y2="2.071" width="0.1524" layer="1"/>
-<wire x1="25.9588" y1="3.5306" x2="26.7716" y2="4.3434" width="0.1524" layer="1"/>
-<wire x1="26.7716" y1="4.3434" x2="29.2354" y2="4.3434" width="0.1524" layer="1"/>
 <wire x1="29.2354" y1="4.3434" x2="29.3624" y2="4.4704" width="0.1524" layer="1"/>
 <polygon width="0.1524" layer="16" thermals="no" rank="6">
 <vertex x="0" y="20.7264"/>
@@ -3793,7 +3780,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <via x="2.9464" y="16.891" extent="1-16" drill="0.3048"/>
 <via x="18.796" y="0.8128" extent="1-16" drill="0.3048"/>
 <via x="10.7442" y="1.0668" extent="1-16" drill="0.3048"/>
-<via x="24.892" y="2.1336" extent="1-16" drill="0.3048"/>
 <via x="16.8656" y="10.8966" extent="1-16" drill="0.3048"/>
 <via x="18.4658" y="14.4526" extent="1-16" drill="0.3"/>
 <via x="14.1478" y="13.8684" extent="1-16" drill="0.3048"/>
@@ -3801,10 +3787,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="C19" pad="2"/>
 <contactref element="C17" pad="-"/>
 <contactref element="C16" pad="-"/>
-<wire x1="25.2866" y1="2.071" x2="25.76256875" y2="2.54696875" width="0.1524" layer="1"/>
-<wire x1="25.76256875" y1="2.54696875" x2="25.76256875" y2="2.83016875" width="0.1524" layer="1"/>
-<wire x1="25.76256875" y1="2.83016875" x2="25.9588" y2="2.83016875" width="0.1524" layer="1"/>
-<wire x1="25.9588" y1="2.83016875" x2="25.9588" y2="3.5306" width="0.1524" layer="1"/>
 <contactref element="U$7" pad="P$13"/>
 <contactref element="C24" pad="2"/>
 <contactref element="C26" pad="1"/>
@@ -3844,6 +3826,13 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <vertex x="36.5252" y="20.4216"/>
 <vertex x="36.4744" y="20.3708"/>
 </polygon>
+<via x="20.8788" y="2.5908" extent="1-16" drill="0.3048"/>
+<wire x1="22.7584" y1="2.921" x2="22.4282" y2="2.5908" width="0.1524" layer="1"/>
+<wire x1="22.4282" y1="2.5908" x2="20.8788" y2="2.5908" width="0.1524" layer="1"/>
+<wire x1="20.2184" y1="2.5282" x2="20.281" y2="2.5908" width="0.1524" layer="1"/>
+<wire x1="20.281" y1="2.5908" x2="20.8788" y2="2.5908" width="0.1524" layer="1"/>
+<via x="20.32" y="7.1628" extent="1-16" drill="0.3048"/>
+<via x="20.32" y="5.7404" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="U">
 <contactref element="R13" pad="1"/>
@@ -3992,8 +3981,6 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <via x="26.6399" y="7.7423" extent="1-16" drill="0.3048"/>
 <wire x1="18.4404" y1="7.5184" x2="19.6596" y2="7.5184" width="0.254" layer="16"/>
 <via x="19.6596" y="7.5184" extent="1-16" drill="0.3048"/>
-<wire x1="19.6596" y1="7.5184" x2="20.4978" y2="7.493" width="0.254" layer="1"/>
-<wire x1="20.4978" y1="7.493" x2="20.4978" y2="7.5574" width="0.254" layer="1"/>
 <wire x1="27.5728" y1="8.4052" x2="27.3028" y2="8.4052" width="0.1524" layer="1"/>
 <wire x1="27.3028" y1="8.4052" x2="26.6399" y2="7.7423" width="0.1524" layer="1"/>
 <wire x1="26.6399" y1="7.7423" x2="19.8835" y2="7.7423" width="0.1524" layer="15"/>
@@ -4002,6 +3989,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="25.8714625" y1="7.5462" x2="23.391" y2="7.5462" width="0.1524" layer="1"/>
 <wire x1="23.391" y1="7.5462" x2="23.0338" y2="7.9034" width="0.1524" layer="1"/>
 <wire x1="26.6399" y1="7.7423" x2="26.0675625" y2="7.7423" width="0.1524" layer="1"/>
+<wire x1="24.8666" y1="8.6242" x2="25.1856625" y2="8.6242" width="0.1524" layer="1"/>
+<wire x1="25.1856625" y1="8.6242" x2="26.0675625" y2="7.7423" width="0.1524" layer="1"/>
 </signal>
 <signal name="W">
 <contactref element="R15" pad="1"/>
@@ -4010,23 +3999,22 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <contactref element="C4" pad="1"/>
 <wire x1="18.1864" y1="6.3364" x2="18.9112" y2="6.3364" width="0.1524" layer="1"/>
 <wire x1="18.9112" y1="6.3364" x2="19.2024" y2="6.0452" width="0.1524" layer="1"/>
-<wire x1="19.2024" y1="6.0452" x2="19.2024" y2="2.0574" width="0.1524" layer="1"/>
-<wire x1="19.2024" y1="2.0574" x2="19.5072" y2="1.7526" width="0.1524" layer="1"/>
-<wire x1="19.5072" y1="1.7526" x2="20.232" y2="1.7526" width="0.1524" layer="1"/>
-<wire x1="20.232" y1="1.7526" x2="20.2438" y2="1.7408" width="0.1524" layer="1"/>
-<wire x1="20.2438" y1="1.7408" x2="20.7382" y2="1.7408" width="0.1524" layer="1"/>
-<wire x1="20.7382" y1="1.7408" x2="21.5138" y2="0.9652" width="0.1524" layer="1"/>
+<wire x1="19.2024" y1="2.0574" x2="19.2024" y2="6.0452" width="0.1524" layer="1"/>
+<wire x1="21.5138" y1="0.9652" x2="20.7382" y2="1.7408" width="0.1524" layer="1"/>
 <wire x1="21.5138" y1="0.9652" x2="22.9108" y2="0.9652" width="0.1524" layer="1"/>
 <wire x1="22.9108" y1="0.9652" x2="22.987" y2="1.0414" width="0.1524" layer="1"/>
 <wire x1="22.987" y1="1.0414" x2="22.987" y2="1.5996" width="0.1524" layer="1"/>
 <wire x1="22.987" y1="1.5996" x2="23.0084" y2="1.621" width="0.1524" layer="1"/>
-<wire x1="27.5728" y1="2.5124" x2="27.5728" y2="2.4014" width="0.1524" layer="1"/>
-<wire x1="25.9334" y1="0.762" x2="23.2664" y2="0.762" width="0.1524" layer="1"/>
+<wire x1="23.4188" y1="0.762" x2="23.2664" y2="0.762" width="0.1524" layer="1"/>
 <wire x1="23.2664" y1="0.762" x2="22.987" y2="1.0414" width="0.1524" layer="1"/>
-<wire x1="27.5728" y1="2.4014" x2="27.26736875" y2="2.09596875" width="0.1524" layer="1"/>
-<wire x1="27.26736875" y1="2.09596875" x2="27.26736875" y2="1.32536875" width="0.1524" layer="1"/>
-<wire x1="27.26736875" y1="1.32536875" x2="26.49676875" y2="1.32536875" width="0.1524" layer="1"/>
-<wire x1="26.49676875" y1="1.32536875" x2="25.9334" y2="0.762" width="0.1524" layer="1"/>
+<wire x1="20.7382" y1="1.7408" x2="19.519" y2="1.7408" width="0.1524" layer="1"/>
+<wire x1="19.519" y1="1.7408" x2="19.2024" y2="2.0574" width="0.1524" layer="1"/>
+<wire x1="27.5728" y1="2.5124" x2="24.9778" y2="2.5124" width="0.1524" layer="1"/>
+<wire x1="24.9778" y1="2.5124" x2="24.765" y2="2.2996" width="0.1524" layer="1"/>
+<wire x1="24.765" y1="2.2996" x2="24.7396" y2="2.2742" width="0.1524" layer="1"/>
+<wire x1="24.7396" y1="2.2742" x2="24.7396" y2="1.3208" width="0.1524" layer="1"/>
+<wire x1="24.7396" y1="1.3208" x2="24.1808" y2="0.762" width="0.1524" layer="1"/>
+<wire x1="24.1808" y1="0.762" x2="23.4188" y2="0.762" width="0.1524" layer="1"/>
 </signal>
 <signal name="+5V">
 <contactref element="U3" pad="1"/>
@@ -4073,12 +4061,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="2.8956" y1="11.9634" x2="4.7752" y2="10.0838" width="0.254" layer="2"/>
 <wire x1="4.7752" y1="10.0838" x2="4.7752" y2="4.8768" width="0.254" layer="2"/>
 <wire x1="4.7752" y1="4.8768" x2="3.8608" y2="3.9624" width="0.254" layer="2"/>
-<wire x1="12.1514" y1="19.2532" x2="12.1514" y2="18.227" width="0.254" layer="1"/>
+<wire x1="12.0764" y1="19.2532" x2="12.1514" y2="18.227" width="0.254" layer="1"/>
 <wire x1="12.1514" y1="18.227" x2="12.7508" y2="17.6276" width="0.254" layer="1"/>
 <wire x1="12.7508" y1="17.6276" x2="13.6707" y2="17.6276" width="0.254" layer="1"/>
 <wire x1="13.6707" y1="17.6276" x2="13.7621" y2="17.719" width="0.254" layer="1"/>
 <wire x1="13.7621" y1="19.619" x2="12.5172" y2="19.619" width="0.254" layer="1"/>
-<wire x1="12.5172" y1="19.619" x2="12.1514" y2="19.2532" width="0.254" layer="1"/>
+<wire x1="12.5172" y1="19.619" x2="12.0764" y2="19.2532" width="0.254" layer="1"/>
 <wire x1="4.1764" y1="16.2606" x2="4.7036" y2="16.2606" width="0.254" layer="1"/>
 <wire x1="4.7036" y1="16.2606" x2="5.5372" y2="17.0942" width="0.254" layer="1"/>
 <via x="5.5372" y="17.0942" extent="1-16" drill="0.3048"/>
@@ -4335,10 +4323,12 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <signal name="V_HIGH_GATE">
 <contactref element="U$2" pad="TG"/>
 <contactref element="U$5" pad="8"/>
-<wire x1="27.5728" y1="9.6752" x2="25.7462" y2="7.8486" width="0.1524" layer="1"/>
-<wire x1="25.7462" y1="7.8486" x2="24.1554" y2="7.8486" width="0.1524" layer="1"/>
-<wire x1="24.1554" y1="7.8486" x2="23.8044" y2="8.1996" width="0.1524" layer="1"/>
-<wire x1="23.8044" y1="8.1996" x2="23.5338" y2="8.1996" width="0.1524" layer="1"/>
+<wire x1="23.5338" y1="8.1996" x2="23.7952" y2="8.1996" width="0.1524" layer="1"/>
+<wire x1="23.7952" y1="8.1996" x2="24.0284" y2="8.4328" width="0.1524" layer="1"/>
+<wire x1="24.0284" y1="8.4328" x2="24.0284" y2="9.2964" width="0.1524" layer="1"/>
+<wire x1="24.0284" y1="9.2964" x2="24.1808" y2="9.4488" width="0.1524" layer="1"/>
+<wire x1="27.3464" y1="9.4488" x2="27.5728" y2="9.6752" width="0.1524" layer="1"/>
+<wire x1="24.1808" y1="9.4488" x2="27.3464" y2="9.4488" width="0.1524" layer="1"/>
 </signal>
 <signal name="V_LOW_GATE">
 <contactref element="U$2" pad="BG"/>
@@ -4359,16 +4349,14 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <signal name="W_HIGH_GATE">
 <contactref element="U$3" pad="TG"/>
 <contactref element="U$6" pad="8"/>
-<wire x1="23.5084" y1="1.621" x2="23.7536" y2="1.621" width="0.1524" layer="1"/>
-<wire x1="23.7536" y1="1.621" x2="24.3078" y2="1.0668" width="0.1524" layer="1"/>
-<wire x1="24.3078" y1="1.0668" x2="25.7302" y2="1.0668" width="0.1524" layer="1"/>
-<wire x1="26.289" y1="3.0734" x2="27.0002" y2="3.7846" width="0.1524" layer="1"/>
+<wire x1="26.3652" y1="3.1496" x2="27.0002" y2="3.7846" width="0.1524" layer="1"/>
 <wire x1="27.0002" y1="3.7846" x2="27.5706" y2="3.7846" width="0.1524" layer="1"/>
 <wire x1="27.5706" y1="3.7846" x2="27.5728" y2="3.7824" width="0.1524" layer="1"/>
-<wire x1="25.7302" y1="1.0668" x2="26.06496875" y2="1.40156875" width="0.1524" layer="1"/>
-<wire x1="26.06496875" y1="1.40156875" x2="26.06496875" y2="2.52776875" width="0.1524" layer="1"/>
-<wire x1="26.06496875" y1="2.52776875" x2="26.289" y2="2.52776875" width="0.1524" layer="1"/>
-<wire x1="26.289" y1="2.52776875" x2="26.289" y2="3.0734" width="0.1524" layer="1"/>
+<wire x1="23.5084" y1="1.621" x2="23.8206" y2="1.621" width="0.1524" layer="1"/>
+<wire x1="23.9776" y1="1.778" x2="23.9776" y2="3.048" width="0.1524" layer="1"/>
+<wire x1="23.9776" y1="3.048" x2="24.0792" y2="3.1496" width="0.1524" layer="1"/>
+<wire x1="24.0792" y1="3.1496" x2="26.3652" y2="3.1496" width="0.1524" layer="1"/>
+<wire x1="23.8206" y1="1.621" x2="23.9776" y2="1.778" width="0.1524" layer="1"/>
 </signal>
 <signal name="W_LOW_GATE">
 <contactref element="U$3" pad="BG"/>
@@ -4627,15 +4615,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="24.2031125" y1="11.488034375" x2="24.237671875" y2="11.52358125" width="0.1524" layer="1"/>
 <wire x1="24.237671875" y1="11.52358125" x2="24.4228" y2="11.714" width="0.1524" layer="1"/>
 <wire x1="24.4228" y1="11.714" x2="24.4482" y2="13.1318" width="0.1524" layer="1"/>
-<wire x1="20.4978" y1="9.2574" x2="20.4978" y2="10.033" width="0.1524" layer="1"/>
-<wire x1="20.4978" y1="10.033" x2="20.9042" y2="10.033" width="0.1524" layer="1"/>
-<via x="20.9042" y="10.033" extent="1-16" drill="0.3048"/>
 <via x="24.2031125" y="11.488034375" extent="1-16" drill="0.3048"/>
 <wire x1="24.2031125" y1="11.488034375" x2="24.2031125" y2="11.489021875" width="0.1524" layer="1"/>
 <wire x1="24.2031125" y1="11.489021875" x2="24.237671875" y2="11.52358125" width="0.1524" layer="1"/>
-<wire x1="24.2031125" y1="11.488034375" x2="23.685503125" y2="11.488034375" width="0.1524" layer="16"/>
-<wire x1="23.685503125" y1="11.488034375" x2="22.23046875" y2="10.033" width="0.1524" layer="16"/>
-<wire x1="22.23046875" y1="10.033" x2="20.9042" y2="10.033" width="0.1524" layer="16"/>
+<wire x1="24.8666" y1="10.3242" x2="24.3912" y2="10.7996" width="0.1524" layer="1"/>
+<wire x1="24.3912" y1="10.7996" x2="23.5338" y2="10.7996" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="C4" pad="2"/>
@@ -4645,12 +4629,8 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="24.2958" y1="5.6776" x2="23.495" y2="4.8768" width="0.1524" layer="1"/>
 <wire x1="23.495" y1="4.8768" x2="23.495" y2="4.2344" width="0.1524" layer="1"/>
 <wire x1="23.495" y1="4.2344" x2="23.5084" y2="4.221" width="0.1524" layer="1"/>
-<wire x1="20.2438" y1="3.4408" x2="20.2438" y2="5.1562" width="0.1524" layer="1"/>
-<wire x1="20.2438" y1="5.1562" x2="20.8534" y2="5.7658" width="0.1524" layer="1"/>
-<wire x1="20.8534" y1="5.7658" x2="22.6822" y2="5.7658" width="0.1524" layer="1"/>
-<wire x1="22.6822" y1="5.7658" x2="23.241" y2="6.3246" width="0.1524" layer="1"/>
-<wire x1="23.241" y1="6.3246" x2="24.209440625" y2="6.3246" width="0.1524" layer="1"/>
-<wire x1="24.209440625" y1="6.3246" x2="24.2958" y2="6.410959375" width="0.1524" layer="1"/>
+<wire x1="24.765" y1="3.9996" x2="24.5436" y2="4.221" width="0.1524" layer="1"/>
+<wire x1="24.5436" y1="4.221" x2="23.5084" y2="4.221" width="0.1524" layer="1"/>
 </signal>
 <signal name="RC_SIG_RCV">
 <contactref element="RX_IN_PIN" pad="TP"/>
@@ -4772,17 +4752,11 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="22.2942" y1="13.1318" x2="22.2688" y2="13.1248" width="0.1524" layer="1"/>
 <wire x1="22.2688" y1="13.1248" x2="21.717" y2="13.208" width="0.1524" layer="1"/>
 <via x="21.717" y="13.208" extent="1-16" drill="0.3048"/>
-<wire x1="24.9428" y1="10.4258" x2="24.3976" y2="10.4258" width="0.1524" layer="1"/>
-<wire x1="24.3976" y1="10.4258" x2="24.384" y2="10.4394" width="0.1524" layer="1"/>
-<via x="24.384" y="10.4394" extent="1-16" drill="0.3048"/>
 <via x="21.6916" y="11.0998" extent="1-16" drill="0.3048"/>
 <via x="21.6154" y="6.5532" extent="1-16" drill="0.3048"/>
 <via x="21.6916" y="4.3688" extent="1-16" drill="0.3048"/>
-<via x="24.4348" y="3.81" extent="1-16" drill="0.3048"/>
 <wire x1="22.0084" y1="4.221" x2="21.8394" y2="4.221" width="0.1524" layer="1"/>
 <wire x1="21.8394" y1="4.221" x2="21.6916" y2="4.3688" width="0.1524" layer="1"/>
-<wire x1="25.0952" y1="3.771" x2="24.4738" y2="3.771" width="0.1524" layer="1"/>
-<wire x1="24.4738" y1="3.771" x2="24.4348" y2="3.81" width="0.1524" layer="1"/>
 <wire x1="21.6154" y1="6.5532" x2="21.999559375" y2="6.5532" width="0.1524" layer="1"/>
 <wire x1="21.999559375" y1="6.5532" x2="22.1418" y2="6.410959375" width="0.1524" layer="1"/>
 <wire x1="22.0338" y1="10.7996" x2="21.8694" y2="10.964" width="0.1524" layer="1"/>
@@ -4809,6 +4783,10 @@ Source: www.rsonline.de .. SMBJ12/C/15/C/24/C/30/C/5.0/C/7.5/C Voltage Suppresso
 <wire x1="21.7424" y1="13.2334" x2="21.717" y2="13.208" width="0.1524" layer="2"/>
 <wire x1="21.082" y1="18.4658" x2="21.1328" y2="18.4062" width="0.1524" layer="1"/>
 <wire x1="21.1328" y1="18.4062" x2="21.7036" y2="17.8354" width="0.1524" layer="1"/>
+<wire x1="20.6248" y1="9.5622" x2="21.6916" y2="10.629" width="0.1524" layer="1"/>
+<wire x1="21.6916" y1="10.629" x2="21.6916" y2="11.0998" width="0.1524" layer="1"/>
+<wire x1="20.2184" y1="4.2282" x2="20.359" y2="4.3688" width="0.1524" layer="1"/>
+<wire x1="20.359" y1="4.3688" x2="21.6916" y2="4.3688" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$7" pad="P$12"/>
