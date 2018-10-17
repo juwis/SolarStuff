@@ -87,7 +87,7 @@ uint16_t adc_read(void)
 	
 	((unsigned char *) &value)[0]=adc_channel->RESL;
 	((unsigned char *) &value)[1]=adc_channel->RESH;
-	uint16_t res = ((((float)value * 23.0) / 4096.0) - 0.9) * 1000;
+	uint16_t res = (((((float)value * 21.0) / 4096.0)) * 1000) - 900;
 	return res;
 }
 
@@ -212,7 +212,7 @@ ISR(ACA_AC0_vect)
 		average_time = last_rt_time;
 		
 		commutation_time = average_time / 24;
-		comperator_sleep_time = average_time/32; // time ignore comparator changes
+		comperator_sleep_time = average_time / 32; // time ignore comparator changes
 
 
 	}
@@ -803,6 +803,8 @@ int main(void)
 	// wait for no power from transmitter, a hundred times with no exception
 	uint8_t no_power_count = 100;
 	while(1){
+
+
 		if(get_transmitter_power() == 0){
 			no_power_count--;
 			_delay_ms(5);
@@ -824,9 +826,12 @@ int main(void)
 	while (1)
 	{
 		ADC=adc_read();
+
 		transmitter_power = get_transmitter_power();
-	
-		printf("%08u\r\n", average_time);	
+		
+		//adc_filtered += (((double)ADC - (double)adc_filtered) / 32.0);
+		
+		//printf("%u mV\r\n", adc_filtered);	
 		
 		_delay_us(100);
 	
@@ -862,7 +867,6 @@ int main(void)
 				out_power--;
 			}
 			
-			//printf("%08u : %08u : %u mV\r\n", out_power_transmitter, out_power, ADC);	
 			TCC0.CCA = out_power;
 		}
 		
