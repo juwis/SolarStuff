@@ -1,4 +1,7 @@
 # SolarStuff on SolarFlight.info
-* brushless esc with integrated MPPT -> https://github.com/juwis/SolarStuff/tree/master/src/autompptbldc/autompptbldc
-* Solar Flight optimized Propellers  -> https://github.com/juwis/SolarStuff/tree/master/props/PROP_NG
-* ...
+1. brushless esc with integrated MPPT
+ * [Software](./tree/master/src/autompptbldc/autompptbldc)
+ * [Hardware](./tree/master/hardware)
+2. Solar Flight optimized Propellers
+ * [CAD Data, Prop Data](./tree/master/props/PROP_NG)
+3. ...
