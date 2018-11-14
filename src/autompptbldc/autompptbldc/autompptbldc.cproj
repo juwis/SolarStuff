@@ -130,10 +130,31 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="analog_comp.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="analog_comp.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="constants.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="includes.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="setup.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="setup.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="uart.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

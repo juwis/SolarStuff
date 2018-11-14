@@ -101,4 +101,4 @@ static inline void  SET_PHASE_PWM(uint8_t phase, uint8_t breaking){
 
 #define PWM_TOP_PER		0x02FF
 
-#endif
+#endif //CONSTANTS_H
