@@ -6,23 +6,15 @@
 */
 #include "includes.h"
 
-
-void uc_setup(void){
-
-	unsigned char tmp;
-
-	//****************************************************************************************************
-	//uC setup...
-
-	//****************************************************************************************************
-	asm("cli");
-
-
+void clock_setup(){
 	//****************************************************************************************************
 	//clocks
 	// use 32MHZ internal as source for pll, multiply by 16 for 128MHz base clock
 	// divide sysclock down to 32MHz.
 	// we use hires timer with 128MHz for fast PWM
+
+	unsigned char tmp;
+
 
 	OSC.CTRL|=OSC_RC32KEN_bm;
 	// wait for  32 kHz RC oscillator to stabilize
@@ -89,13 +81,14 @@ void uc_setup(void){
 	CCP=CCP_IOREG_gc;
 	OSC.XOSCFAIL=tmp;
 
+}
 
-	//****************************************************************************************************
+void event_setup(){
 	//****************************************************************************************************
 	//event system init
 	//used for servo pulse measuring
 	//****************************************************************************************************
-	
+
 	// Event System Channel 0 source: Port B, Pin0
 	EVSYS.CH0MUX=EVSYS_CHMUX_PORTB_PIN0_gc;
 
@@ -107,12 +100,15 @@ void uc_setup(void){
 	PORTCFG.CLKEVOUT&= ~PORTCFG_EVOUT_gm;
 	PORTCFG.EVOUTSEL&= ~PORTCFG_EVOUTSEL_gm;
 
+}
 
+void io_setup(){
 	//****************************************************************************************************
 	//****************************************************************************************************
 	//now the ports an pins to the world
 	
 	//****************************************************************************************************
+	
 	// PORTA holds analog stuff, so input and no nothing pulled up
 	PORTA.OUT=0x00;
 	PORTA.DIR=0x00;
@@ -179,6 +175,9 @@ void uc_setup(void){
 	PORTR.INTCTRL=PORT_INT1LVL_OFF_gc | PORT_INT0LVL_OFF_gc;
 	PORTR.INT0MASK=0x00;
 	PORTR.INT1MASK=0x00;
+}
+
+void timer_setup(){
 	
 	//****************************************************************************************************
 	//****************************************************************************************************
@@ -186,6 +185,9 @@ void uc_setup(void){
 	
 	
 	//****************************************************************************************************
+	
+	unsigned char tmp;
+
 	//TCC0
 	// single slope pwm with 200KHz
 	// Clock source: ClkPer4/1
@@ -285,13 +287,16 @@ void uc_setup(void){
 	TCE0.CCB=0x0000;
 	TCE0.CCC=0x0000;
 	TCE0.CCD=0x0000;
-	
-	
+}
+
+void adc_setup(){
 	//****************************************************************************************************
 	// Analog 2 digital converter is getting prepped.
 	// high impedance sources
 	// no current limit
 	// unsigned
+
+
 	ADCA.CTRLB=(0<<ADC_IMPMODE_bp) | ADC_CURRLIMIT_HIGH_gc | (0<<ADC_CONMODE_bp) | ADC_RESOLUTION_12BIT_gc;
 
 	// 62,500 kHz
@@ -315,8 +320,9 @@ void uc_setup(void){
 	ADCA.CTRLB|=ADC_FREERUN_bm;
 	// enable!
 	ADCA.CTRLA|=ADC_ENABLE_bm;
+}
 
-
+void ac_setup(){
 	//****************************************************************************************************
 	// Analog Comparator. used for back-emf measurement.
 
@@ -344,8 +350,21 @@ void uc_setup(void){
 	// AC1 Output on PORTA: No
 	ACA.CTRLA=(0<<AC_AC1OUT_bp) | (0<<AC_AC0OUT_bp);
 
+}
 
 
+void uc_setup(void){
+
+	unsigned char tmp;
+	asm("cli");
+
+	clock_setup();
+	event_setup();
+	io_setup();
+	timer_setup();
+	adc_setup();
+
+	
 	//****************************************************************************************************
 	//interrupts setup
 	// Ll interrupt: On

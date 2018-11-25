@@ -8,7 +8,7 @@
 #include "includes.h"
 #include "uart.h"
 
-//uart ->printf binding
+// uart ->printf binding
 FILE uart_output = FDEV_SETUP_STREAM(uart_putchar, NULL, _FDEV_SETUP_WRITE);
 FILE uart_input = FDEV_SETUP_STREAM(NULL, uart_getchar, _FDEV_SETUP_READ);
 
@@ -36,8 +36,8 @@ int uart_putchar(char c, FILE *stream)
 void uart_setup(void){
 
 	//****************************************************************************************************
-	//uart setup
-	// Baudrate 115200
+	// uart setup
+	// Baud rate 115200
 
 	// Set TxD=1
 	PORTD.OUT=0x08;
@@ -49,7 +49,7 @@ void uart_setup(void){
 	USARTD0.CTRLC=USART_CMODE_ASYNCHRONOUS_gc | USART_PMODE_DISABLED_gc | USART_CHSIZE_8BIT_gc;
 	USARTD0.CTRLA=(USARTD0.CTRLA & (~(USART_RXCINTLVL_gm | USART_TXCINTLVL_gm | USART_DREINTLVL_gm))) |
 	USART_RXCINTLVL_OFF_gc | USART_TXCINTLVL_OFF_gc | USART_DREINTLVL_OFF_gc;
-	// Baudrate: 500000
+	// Baud rate: 500000
 	USARTD0.BAUDCTRLA=0x80;
 	USARTD0.BAUDCTRLB=((0x09 << USART_BSCALE_gp) & USART_BSCALE_gm) | 0x01;
 

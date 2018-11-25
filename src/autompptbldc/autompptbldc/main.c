@@ -315,6 +315,26 @@ void beep(uint16_t beep_pwm, uint16_t length, uint8_t tone){
 
 }
 
+void beep_short_low()
+{
+	beep(0x04f, 250, 3);
+}
+
+void beep_short_high()
+{
+	beep(0x04f, 400, 2);
+}
+
+void beep_long_low()
+{
+	beep(0x04f, 800, 3);
+}
+
+void beep_long_high()
+{
+	beep(0x04f, 1200, 2);
+}
+
 uint16_t get_transmitter_power(){
 	static uint16_t power = 1000;
 	volatile uint16_t servopulse = 0;
@@ -352,6 +372,7 @@ uint16_t get_transmitter_power(){
 }
 
 
+
 int main(void)
 {
 	
@@ -370,7 +391,7 @@ int main(void)
 	// from the timing interrupt this is set(and then immediately used by pwm):
 	COMMUTATION_INDEX = 0;
 	
-	// Roundtript time counter, overflow (65535) @ ca 128ms per Phase(60deg)
+	// Round trip time counter, overflow (65535) @ ca 128ms per Phase(60deg)
 	RT_TIME[0] = 0;
 	RT_TIME[1] = 0;
 	RT_TIME[2] = 0;
@@ -391,15 +412,17 @@ int main(void)
 	uart_setup();
 	
 	
-	// "and that's where the fun starts" (patrick jane)
+	// "and that's where the fun starts" (Patrick Jane)
 
 	asm("sei");
 
 	TCC0.CCA = 0x00; //no power applied
 	BREAK = 1; //break applied
-	beep(0x04f, 250, 3);
+	beep_short_low();
+	
 	_delay_ms(100);
-	beep(0x04f, 400, 2);	
+	beep_short_high();
+		
 	// wait for no power from transmitter, a hundred times with no exception
 	uint8_t no_power_count = 100;
 	while(1){
@@ -414,9 +437,10 @@ int main(void)
 		
 		//break if we got no power from tx
 		if(no_power_count < 1){
-			beep(0x04f, 250, 3);
+			beep_short_low();
 			_delay_ms(100);
-			beep(0x04f, 1200, 2);
+			beep_long_high();
+			
 			break;
 		}
 	}

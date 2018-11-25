@@ -130,12 +130,6 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="analog_comp.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="analog_comp.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="constants.h">
       <SubType>compile</SubType>
     </Compile>
